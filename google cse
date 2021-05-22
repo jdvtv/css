@@ -1,4 +1,4 @@
-<style>
+
 /* ===== GOOGLE CUSTOM SEARCH ENGINE ===== */
 .gsc-adBlock { display: none!important; }
 .gsc-cursor-box {
@@ -42,4 +42,3 @@
    background-color: #337ab7;
    border-color: #337ab7; 
 }
-</style>
