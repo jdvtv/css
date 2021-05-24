@@ -1,0 +1,43 @@
+/* ===== GOOGLE CUSTOM SEARCH ENGINE ===== */
+.gsc-adBlock { display: none!important; }
+.gsc-cursor-box {
+   margin: 0 0 90px;
+   border-top: 1px solid #eaeaea;
+   border-bottom: 1px solid #eaeaea;
+   padding: 12px 0;
+}
+.gsc-cursor {
+   float: right;
+   vertical-align: middle;
+   margin: 0;
+   padding-left: 0;
+   border-radius: 4px;
+   display: inline-block; 
+} 
+.gsc-cursor-box:after {
+   content: "";
+   display: block;
+   clear: both; 
+} 
+.gsc-cursor-page {
+   padding: 6px 13px;
+   background-color: #fff;
+   border: 1px solid #eaeaea;
+   color: #222;
+   transition: all 0.45s;
+   text-decoration: none!important;
+   margin-right: 0px!important; 
+} 
+.gsc-cursor-page:hover {
+   z-index: 2;
+   color: #23527c;
+   background-color: #eee;
+   border-color: #ddd; 
+} 
+.gsc-cursor-page.gsc-cursor-current-page {
+   z-index: 3;
+   color: #fff!important;
+   cursor: default;
+   background-color: #337ab7;
+   border-color: #337ab7; 
+}
