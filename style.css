@@ -1,6 +1,11 @@
 <style>
 *{
 }
+header {
+height: 0px;
+visibility: hidden;
+display: none;
+}
 body{
   height: 0vh;
   background: #000115;
