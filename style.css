@@ -1,33 +1,20 @@
 <style>
-*{
-}
-a{
-text-tecoration:none;
-}
+*{}
+a{text-decoration: none;}
 #fontetexto{
 font-family: 'Roboto', sans-serif;
-font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
-}
-
+font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;}
 header {
 height: 0px;
 visibility: hidden;
-display: none;
-}
-body{
-  height: 0vh;
-  background: #000115;
-  cursor: none;
-}
-
-
-.body{
-    margin:0px;
-    padding: 0px;
-    font-family: poppins;
-    background-color: rgba(151,151,151,0.03);
-}
-
+display: none;}
+body{height: 0vh;
+background: #000115;
+cursor: none;}
+.body{margin:0px;
+padding: 0px;
+font-family: poppins;
+background-color: rgba(151,151,151,0.03);}
 nav{
     display: flex;
     justify-content: space-around;
