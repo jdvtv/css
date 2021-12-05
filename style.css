@@ -1,6 +1,9 @@
 <style>
 *{
 }
+a{
+text-tecoration:none;
+}
 #fontetexto{
 font-family: 'Roboto', sans-serif;
 font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
