@@ -2,7 +2,9 @@
 *{}
 #fontetexto{
 font-family: 'Roboto', sans-serif;
-font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;}
+font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
+text-align: center; text-decoration: none;
+}
 header {
 height: 0px;
 visibility: hidden;
@@ -517,6 +519,7 @@ font-size:22px;
   padding: 5px 15px;
 }
 .modal-header-icon{
+    border: none;
     color: currentColor;
     font-family: inherit;
     font-size: 1em;
@@ -580,13 +583,10 @@ margin-top:3px;
   display: inline-block;
   color: #d11507;
 background: #444;
-  text-align: center;
   padding: 14px;
   width:auto;
   border-radius: 7px;
-  text-decoration: none;
-font-family: 'Roboto', sans-serif;
-font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 10px;
+  line-height: 10px;
 }
 div.scrollmenu a:hover {
   background-color: #777;
@@ -636,15 +636,17 @@ display: block;
   width: 100.00%;
   padding:0px;
   border-radius:10px;
-margin-top:20px;
+  border:2px solid #363636;
+  margin-top:20px;
 }
 .column2 {
-  float: left;
-padding: 0px;
+  float:left;
+  padding:0px;
   width: 48%;
   margin-left:0%;
   margin-top:10px;
   border-radius:10px;
+  border:2px solid #363636;
   color:#fff;
 }
 #moveright{
@@ -662,11 +664,10 @@ img {vertical-align: middle;
 image-rendering: auto;
  }
 .coluna{
-text-decoration: none;
   opacity:0.9;
   float: center;
   display: inline-block;
-padding: 0px;
+  padding: 0px;
   margin:-5px;
   margin-top:-5px;
   height: 230px;
