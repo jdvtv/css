@@ -1,6 +1,5 @@
 
 *{}
-a{text-decoration: none;}
 #fontetexto{
 font-family: 'Roboto', sans-serif;
 font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;}
@@ -155,7 +154,6 @@ font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; lin
 }
 
 .containerx {
-border-radius: 5px;
     background: #363636;
     width: 100%;
     margin: auto;
@@ -317,10 +315,9 @@ border-radius:7px;
 width:90px;
 height: 60px;
 background: #ddd;
-border:2px solid #ddd;
 border-radius: 7px;
 color:#000000;
-padding: 0px 0px;
+padding: 0px;
 }
 
 /* Clear floats after the columns */
@@ -334,9 +331,6 @@ padding: 0px 0px;
 .coluna7 {
 display: none;
   }
-.coluna7:hover{
-display: none;
-}
 }
 
 /* On screens that are 520px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -344,9 +338,6 @@ display: none;
   .coluna-7 {
 display: none;
   }
-.coluna7:hover{
-display: none;
-}
 }
 
 .coluna img{
@@ -380,20 +371,11 @@ background: none;
   border: none;
 margin-right:10px;
 }
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  outline: none;
-}
-
-
-
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -406,27 +388,13 @@ margin-right:10px;
   border: 1px solid #ddd;
   z-index: 1;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 0px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-
 #tabela{
     width:100%;
     text-align:center;
     border-radius: 15px;
     }
-
 #tabela tbody tr{
 margin-top: 1px;
     border-radius: 15px;
@@ -540,7 +508,6 @@ font-size:22px;
   box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
   display: flex;
 }
-
 .modal-header-title{
   align-items: center;
   color: #363636;
@@ -550,9 +517,6 @@ font-size:22px;
   padding: 5px 15px;
 }
 .modal-header-icon{
-
-    background: 0 0;
-    border: none;
     color: currentColor;
     font-family: inherit;
     font-size: 1em;
@@ -564,7 +528,6 @@ font-size:22px;
     justify-content: center;
     padding: 0.75rem 1rem;
 }
-
 #modal-content.animation-1{
   animation: animation-1 0.5s forwards;
 }
@@ -606,12 +569,10 @@ div.scrollmenu {
 width: 99%;
 display: none;
   height:43px;
-  border:none;
   border-radius:4px;
   overflow: auto;
   white-space: nowrap;
 }
-
 div.scrollmenu a {
 margin-left: 3px;
   height: 37px;
@@ -657,7 +618,7 @@ div.head{
 display: block;
 }
 div.scrollmenu{
-display: flex;
+display: block;
 }
 }
 @media screen and (max-width: 520px) {
@@ -665,7 +626,7 @@ div.head{
 display: block;
 }
 div.scrollmenu{
-display: flex;
+display: block;
 }
 }
 
@@ -674,23 +635,17 @@ display: flex;
   float: center;
   width: 100.00%;
   padding:0px;
-  background: #363636;
   border-radius:10px;
-  border:2px solid #363636;
 margin-top:20px;
-image-rendering: auto;
 }
 .column2 {
   float: left;
 padding: 0px;
   width: 48%;
   margin-left:0%;
-  background: #363636;
   margin-top:10px;
   border-radius:10px;
-  border:1px solid #363636;
   color:#fff;
-image-rendering: auto;
 }
 #moveright{
 margin-left:3.7%;
@@ -699,16 +654,15 @@ margin-left:3.7%;
   float: left;
   width: 100.00%;
   margin-top:17px;
-  background: #none;
   border-radius:10px;
-  border:2px solid none;
+  padding:1px;
 }
-
-
 img {vertical-align: middle;
          border-radius: 10px;
+image-rendering: auto;
  }
 .coluna{
+text-decoration: none;
   opacity:0.9;
   float: center;
   display: inline-block;
@@ -722,7 +676,6 @@ padding: 0px;
   border:2px solid #d11507;
   border-radius: 10px 10px 10px 0;
   color:#fff;
-image-rendering: auto;
   text-align: center;
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -732,7 +685,7 @@ image-rendering: auto;
 	transform: scale(0.9);
 }
 
-.coluna:hover  {
+.coluna:hover{
 height: 230px;
   width: 142px;
 	-moz-transform: scale(0.93);
@@ -763,19 +716,11 @@ margin-left:1%;
 #moveright{
 margin-left:2.5%;
 }
-.column5{
-width: 100%;
-    background: none;
-    border-radius:10px;
-    padding:1px;
-}
 .column2 h2 img{
 width:100%;
 height:90%;
 }
-
 }
-
 
 * {
   box-sizing: inherit;
@@ -831,7 +776,6 @@ margin-top:0px;
 }
 
 /* Create four equal columns that floats next to each other */
-
 .movies-heading1 {
     margin:0px;
     text-align:left;
@@ -839,13 +783,12 @@ margin-top:0px;
     border-radius: 4px 7px 0 4px;
     background-color: #d11507;
     color:#fff;
-    border: none;
     width: 100%;
     height:40px;
     margin-top: -4px;
 line-height: 40px;
 border-top:none;
-border-left:none;
+border-bottom:none;
 border-right:none;
 border-left:6px solid #088A68;
 }
@@ -858,12 +801,12 @@ border-left:6px solid #088A68;
     color:#fff;
     line-height: 40px;
 border-top:none;
-border-left:none;
+border-bottom:none;
 border-right:none;
 border-left:6px solid #088A68;
     width: 100%;
     height:40px;
-    margin-top: 7px;
+    margin-top:7px;
 }
 
 /* Clear floats after the columns */
@@ -888,13 +831,10 @@ border-left:6px solid #088A68;
 .movies-heading1 {
     margin-top: -4px;
 }
- 
 .movies-heading3 {
     margin-top: 7px;
 }
 }
-
-
 .column3 h1{
 position:absolute;
 width:60px;
@@ -947,7 +887,6 @@ border:2px solid #d11507;
         font-size: 15px;
         color:#fff;
         background: #d11507;
-image-rendering: auto;
 -moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
