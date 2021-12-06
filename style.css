@@ -6,21 +6,17 @@ font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
 }
 a{
 font-family: 'Roboto', sans-serif;
-font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
+font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700;
 text-decoration: none;
-font-size:18px;
 }
 header {
-height: 0px;
-visibility: hidden;
 display: none;}
 body{height: 0vh;
 background: #000115;
 cursor: none;}
 .body{margin:0px;
 padding: 0px;
-font-family: poppins;
-background-color: rgba(151,151,151,0.03);}
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -234,14 +230,14 @@ border-bottom:2px solid #202020;
 
 .content__list {
 overflow: auto;
-    list-style: none;
+list-style: none;
 height: 300px;
 margin-top: -1px;
 }
 
 .content__list--item {
-    padding: 14px;
-    color: #fff;
+padding: 14px;
+color: #fff;
 background: #454545;
 }
 
@@ -312,8 +308,7 @@ margin-top:5.5px;
 margin-left: 15px;
 padding: 0px;
 color: #fff;
-font-family: 'Roboto', sans-serif;
-font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 60px;
+line-height: 60px;
 background: #088A68;
 border-radius:7px;
 }
@@ -409,8 +404,7 @@ margin-top: 1px;
     height:25px;
     cursor:pointer;
     display: none;
-   font-family: 'Roboto', sans-serif;
-font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17px;
+    line-height: 17px;
 background: #ddd;
 border-radius:7px;
 }
@@ -432,8 +426,7 @@ border-radius:7px;
 border-bottom:1px solid #ddd;
 border-right:none;
 border-left:none;
-font-family: 'Roboto', sans-serif;
-font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17px;
+line-height: 17px;
 }
 
 awesome/3.0/css/font-awesome.css";
