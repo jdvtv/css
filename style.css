@@ -763,6 +763,11 @@ margin-top:0px;
             display: none;
         }
     }
+  /* positioning context for advancers */
+  position: relative;
+  // Crush the whitespace here
+  font-size: 0;
+}
 .pn-ProductNav_Contents {
   float: left;
   transition: transform .2s ease-in-out;
