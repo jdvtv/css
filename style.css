@@ -654,9 +654,8 @@ background: #363636;
 }
 .scrolling-grid{
 width: 100%;
-height: 100%;
+height: 200px;
 overflow: auto;
-  white-space: nowrap;
 }
 .grid{
 display: inline-block;
