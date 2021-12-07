@@ -428,7 +428,7 @@ border-right:none;
 border-left:none;
 line-height: 17px;
 }
-
+.mainLoginInput::placeholder{color:#000000;}
 #open-modal{
 outline: none;
 background: none;
