@@ -429,45 +429,6 @@ border-left:none;
 line-height: 17px;
 }
 
-awesome/3.0/css/font-awesome.css";
-.mainLoginInput{
-  height: 40px;
-  padding: 0px;
-  font-size: 30px;
-  margin: 5px 0;
-}
-.mainLoginInput::-webkit-input-placeholder { 
-font-family: FontAwesome;
-font-weight: normal;
-font-size: 15px;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #000000;
-}
-.mainLoginInput::-moz-placeholder  { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #000000;
-}
-.mainLoginInput:-ms-input-placeholder  { 
-font-family: FontAwesome;
-font-weight: normal;
-overflow: visible;
-vertical-align: top;
-display: inline-block !important;
-padding-left: 5px;
-padding-top: 2px;
-color: #000000;
-}
-
 #open-modal{
 outline: none;
 background: none;
