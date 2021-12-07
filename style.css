@@ -1,22 +1,33 @@
-
-*{}
+<style>
+*{
+}
 #fontetexto{
 font-family: 'Roboto', sans-serif;
 font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
 }
-a{
-font-family: 'Roboto', sans-serif;
-font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700;
-text-decoration: none;
+.a{font-family: 'Roboto', sans-serif;
+font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
+text-decoration:none;
 }
 header {
-display: none;}
-body{height: 0vh;
-background: #000115;
-cursor: none;}
-.body{margin:0px;
-padding: 0px;
+height: 0px;
+visibility: hidden;
+display: none;
 }
+body{
+  height: 0vh;
+  background: #000115;
+  cursor: none;
+}
+
+
+.body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgba(151,151,151,0.03);
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -157,6 +168,7 @@ font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; lin
 }
 
 .containerx {
+border-radius: 5px;
     background: #363636;
     width: 100%;
     margin: auto;
@@ -230,14 +242,14 @@ border-bottom:2px solid #202020;
 
 .content__list {
 overflow: auto;
-list-style: none;
+    list-style: none;
 height: 300px;
 margin-top: -1px;
 }
 
 .content__list--item {
-padding: 14px;
-color: #fff;
+    padding: 14px;
+    color: #fff;
 background: #454545;
 }
 
@@ -308,7 +320,8 @@ margin-top:5.5px;
 margin-left: 15px;
 padding: 0px;
 color: #fff;
-line-height: 60px;
+font-family: 'Roboto', sans-serif;
+font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 60px;
 background: #088A68;
 border-radius:7px;
 }
@@ -317,9 +330,10 @@ border-radius:7px;
 width:90px;
 height: 60px;
 background: #ddd;
+border:2px solid #ddd;
 border-radius: 7px;
 color:#000000;
-padding: 0px;
+padding: 0px 0px;
 }
 
 /* Clear floats after the columns */
@@ -333,6 +347,9 @@ padding: 0px;
 .coluna7 {
 display: none;
   }
+.coluna7:hover{
+display: none;
+}
 }
 
 /* On screens that are 520px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -340,6 +357,13 @@ display: none;
   .coluna-7 {
 display: none;
   }
+.coluna7:hover{
+display: none;
+}
+}
+
+.coluna img{
+margin-top:15px;
 }
 
 .fa-fire{
@@ -369,11 +393,20 @@ background: none;
   border: none;
 margin-right:10px;
 }
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  outline: none;
+}
+
+
+
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -386,13 +419,27 @@ margin-right:10px;
   border: 1px solid #ddd;
   z-index: 1;
 }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
 #tabela{
     width:100%;
     text-align:center;
     border-radius: 15px;
     }
+
 #tabela tbody tr{
 margin-top: 1px;
     border-radius: 15px;
@@ -400,7 +447,8 @@ margin-top: 1px;
     height:25px;
     cursor:pointer;
     display: none;
-    line-height: 17px;
+   font-family: 'Roboto', sans-serif;
+font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17px;
 background: #ddd;
 border-radius:7px;
 }
@@ -422,9 +470,49 @@ border-radius:7px;
 border-bottom:1px solid #ddd;
 border-right:none;
 border-left:none;
-line-height: 17px;
+font-family: 'Roboto', sans-serif;
+font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 17px;
 }
-.mainLoginInput::placeholder{color:#000000;}
+
+awesome/3.0/css/font-awesome.css";
+.mainLoginInput{
+  height: 40px;
+  padding: 0px;
+  font-size: 30px;
+  margin: 5px 0;
+}
+.mainLoginInput::-webkit-input-placeholder { 
+font-family: FontAwesome;
+font-weight: normal;
+font-size: 15px;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: #000000;
+}
+.mainLoginInput::-moz-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: #000000;
+}
+.mainLoginInput:-ms-input-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: #000000;
+}
+
 #open-modal{
 outline: none;
 background: none;
@@ -465,6 +553,7 @@ font-size:22px;
   box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
   display: flex;
 }
+
 .modal-header-title{
   align-items: center;
   color: #363636;
@@ -474,18 +563,21 @@ font-size:22px;
   padding: 5px 15px;
 }
 .modal-header-icon{
-    background: none;
+
+    background: 0 0;
     border: none;
     color: currentColor;
     font-family: inherit;
     font-size: 1em;
     margin: 0;
+    padding: 0;
     align-items: center;
     cursor: pointer;
     display: flex;
     justify-content: center;
     padding: 0.75rem 1rem;
 }
+
 #modal-content.animation-1{
   animation: animation-1 0.5s forwards;
 }
@@ -513,12 +605,11 @@ top:50%;
 }
 @media screen and (max-width: 520px) {
 .modal-content {
-top:32%;
+top:30%;
 }
 }
 
 div.head{
-width: 100%;
   background-color: #363636;
 margin-top: 67px;
   border-radius:4px;
@@ -528,10 +619,12 @@ div.scrollmenu {
 width: 99%;
 display: none;
   height:43px;
+  border:none;
   border-radius:4px;
   overflow: auto;
   white-space: nowrap;
 }
+
 div.scrollmenu a {
 margin-left: 3px;
   height: 37px;
@@ -539,10 +632,13 @@ margin-top:3px;
   display: inline-block;
   color: #d11507;
 background: #444;
+  text-align: center;
   padding: 14px;
   width:auto;
   border-radius: 7px;
-  line-height: 10px;
+  text-decoration: none;
+font-family: 'Roboto', sans-serif;
+font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 10px;
 }
 div.scrollmenu a:hover {
   background-color: #777;
@@ -574,7 +670,7 @@ div.head{
 display: block;
 }
 div.scrollmenu{
-display: block;
+display: flex;
 }
 }
 @media screen and (max-width: 520px) {
@@ -582,7 +678,7 @@ div.head{
 display: block;
 }
 div.scrollmenu{
-display: block;
+display: flex;
 }
 }
 
@@ -591,34 +687,73 @@ display: block;
   float: center;
   width: 100.00%;
   padding:0px;
+  background: #363636;
   border-radius:10px;
   border:2px solid #363636;
-  margin-top:20px;
+margin-top:20px;
+image-rendering: auto;
 }
 .column2 {
-  float:left;
-  padding:0px;
+  float: left;
+padding: 0px;
   width: 48%;
   margin-left:0%;
+  background: #363636;
   margin-top:10px;
   border-radius:10px;
-  border:2px solid #363636;
+  border:1px solid #363636;
   color:#fff;
+image-rendering: auto;
 }
 #moveright{
 margin-left:3.7%;
 }
 .column5 {
-  float:left;
-  width: 100%;
+  float: left;
+  width: 100.00%;
   margin-top:17px;
+  background: #none;
   border-radius:10px;
-  padding:1px;
+  border:2px solid none;
 }
+
+
 img {vertical-align: middle;
          border-radius: 10px;
-image-rendering: auto;
  }
+.coluna{
+  opacity:0.9;
+  float: center;
+  display: inline-block;
+padding: 0px;
+  margin:-5px;
+  margin-top:-5px;
+  height: 230px;
+  width: 142px;
+  font-size: 15px;
+  background: #d11507;
+  border:2px solid #d11507;
+  border-radius: 10px 10px 10px 0;
+  color:#fff;
+image-rendering: auto;
+  text-align: center;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+-moz-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.coluna:hover  {
+height: 230px;
+  width: 142px;
+	-moz-transform: scale(0.93);
+	-webkit-transform: scale(0.93);
+	transform: scale(0.93);
+        background: #8b0000;
+        border: 2px solid #8b0000;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -638,61 +773,78 @@ margin-top:0px;
     width: 47.50%;
 margin-left:1%;
   }
-#moveright x{
+#moveright{
 margin-left:2.5%;
+}
+.column5{
+width: 100%;
+    background: none;
+    border-radius:10px;
+    padding:1px;
 }
 .column2 h2 img{
 width:100%;
 height:90%;
 }
+
 }
 
-div.scroll-grid{
-width:100%;
-height: 200px;
-background: #363636;
+
+* {
+  box-sizing: inherit;
 }
-div.scrolling-grid{
-width: 100%;
-height: 200px;
-overflow: auto;
-white-space: nowrap;
-}
-div.grid{
-display: inline-block;
-margin-left:0px;
-width: 30%;
-height: 200px;
-background: #606060;
-}
-div.grid h1{
-margin-left:4px;
-width:60px;
-margin-top:5px;
-color: #fff;
+.caption-text{
 line-height: 25px;
-background: #088A68;
-border-radius:7px;
-opacity: 0.8;
-font-size: 17px;
+color:#fff;
+margin-top:0px;
 }
-div.grid h3{
-margin-left:4px;
-width:100px;
-margin-top:30px;
-color: #fff;
-line-height: 25px;
-background: #088A68;
-border-radius:7px;
-opacity: 0.8;
-font-size: 17px;
+.pn-ProductNav_Wrapper {
+  position: relative;
+  padding: 0px 0;
+  box-sizing: border-box;
+  height:220px;
+  margin-top:3px;
+  background:#181818;
+  border-radius: 10px;
 }
-@media screen and (max-width: 600px) {
-div.grid{
-width: 100%;
+
+.pn-ProductNav {
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* If JS present, let's hide the default scrollbar */
+    .js & {
+        /* Make an auto-hiding scroller for the 3 people using a IE */
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        /* Remove the default scrollbar for WebKit implementations */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+  /* positioning context for advancers */
+  position: relative;
+  // Crush the whitespace here
+  font-size: 0;
 }
+
+.pn-ProductNav_Contents {
+  float: left;
+  transition: transform .2s ease-in-out;
+  position: relative;
+  height: 280px;
 }
+
+.pn-ProductNav_Contents-no-transition {
+  transition: none;
+}
+
 /* Create four equal columns that floats next to each other */
+
 .movies-heading1 {
     margin:0px;
     text-align:left;
@@ -700,12 +852,13 @@ width: 100%;
     border-radius: 4px 7px 0 4px;
     background-color: #d11507;
     color:#fff;
+    border: none;
     width: 100%;
     height:40px;
     margin-top: -4px;
 line-height: 40px;
 border-top:none;
-border-bottom:none;
+border-left:none;
 border-right:none;
 border-left:6px solid #088A68;
 }
@@ -718,12 +871,12 @@ border-left:6px solid #088A68;
     color:#fff;
     line-height: 40px;
 border-top:none;
-border-bottom:none;
+border-left:none;
 border-right:none;
 border-left:6px solid #088A68;
     width: 100%;
     height:40px;
-    margin-top:7px;
+    margin-top: 7px;
 }
 
 /* Clear floats after the columns */
@@ -748,10 +901,13 @@ border-left:6px solid #088A68;
 .movies-heading1 {
     margin-top: -4px;
 }
+ 
 .movies-heading3 {
     margin-top: 7px;
 }
 }
+
+
 .column3 h1{
 position:absolute;
 width:60px;
@@ -772,6 +928,26 @@ background: #088A68;
 border-radius:7px;
 opacity: 0.8;
 }
+.h1{
+position:absolute;
+width:60px;
+margin-top:5px;
+color: #fff;
+line-height: 25px;
+background: #088A68;
+border-radius:7px;
+opacity: 0.8;
+}
+.h3{
+position:absolute;
+width:100px;
+margin-top:-58px;
+color: #fff;
+line-height: 25px;
+background: #088A68;
+border-radius:7px;
+opacity: 0.8;
+}
 .column3 {
 opacity:0.9;
   float: left;
@@ -784,6 +960,7 @@ border:2px solid #d11507;
         font-size: 15px;
         color:#fff;
         background: #d11507;
+image-rendering: auto;
 -moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
@@ -871,5 +1048,5 @@ border-radius: 7px;
 color:#000000;
 }
 
-
+</style>
 
