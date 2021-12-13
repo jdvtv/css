@@ -5,7 +5,10 @@
 font-family: 'Roboto', sans-serif;
 font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
 }
-
+.a{font-family: 'Roboto', sans-serif;
+font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;
+text-decoration:none;
+}
 header {
 height: 0px;
 visibility: hidden;
@@ -679,6 +682,323 @@ display: flex;
 }
 }
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 100.00%;
+  padding:0px;
+  background: #363636;
+  border-radius:10px;
+  border:2px solid #363636;
+margin-top:20px;
+image-rendering: auto;
+}
+.column2 {
+  float: left;
+padding: 0px;
+  width: 48%;
+  margin-left:0%;
+  background: #363636;
+  margin-top:10px;
+  border-radius:10px;
+  border:1px solid #363636;
+  color:#fff;
+image-rendering: auto;
+}
+#moveright{
+margin-left:3.7%;
+}
+.column5 {
+  float: left;
+  width: 100.00%;
+  margin-top:17px;
+  background: #none;
+  border-radius:10px;
+  border:2px solid none;
+}
+
+
+img {vertical-align: middle;
+         border-radius: 10px;
+ }
+.coluna{
+  opacity:0.9;
+  float: center;
+  display: inline-block;
+padding: 0px;
+  margin:-5px;
+  margin-top:-5px;
+  height: 230px;
+  width: 142px;
+  font-size: 15px;
+  background: #d11507;
+  border:2px solid #d11507;
+  border-radius: 10px 10px 10px 0;
+  color:#fff;
+image-rendering: auto;
+  text-align: center;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+-moz-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.coluna:hover  {
+height: 230px;
+  width: 142px;
+	-moz-transform: scale(0.93);
+	-webkit-transform: scale(0.93);
+	transform: scale(0.93);
+        background: #8b0000;
+        border: 2px solid #8b0000;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: ("");
+  display: table;
+  clear: both;
+}
+ 
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;   
+    margin-left:0;
+margin-top:0px;
+}
+  .column2 {
+    width: 47.50%;
+margin-left:1%;
+  }
+#moveright{
+margin-left:2.5%;
+}
+.column5{
+width: 100%;
+    background: none;
+    border-radius:10px;
+    padding:1px;
+}
+.column2 h2 img{
+width:100%;
+height:90%;
+}
+
+}
+
+
+* {
+  box-sizing: inherit;
+}
+.caption-text{
+line-height: 25px;
+color:#fff;
+margin-top:0px;
+}
+.pn-ProductNav_Wrapper {
+  position: relative;
+  padding: 0px 0;
+  box-sizing: border-box;
+  height:220px;
+  margin-top:3px;
+  background:#181818;
+  border-radius: 10px;
+}
+
+.pn-ProductNav {
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* If JS present, let's hide the default scrollbar */
+    .js & {
+        /* Make an auto-hiding scroller for the 3 people using a IE */
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        /* Remove the default scrollbar for WebKit implementations */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+  /* positioning context for advancers */
+  position: relative;
+  // Crush the whitespace here
+  font-size: 0;
+}
+
+.pn-ProductNav_Contents {
+  float: left;
+  transition: transform .2s ease-in-out;
+  position: relative;
+  height: 280px;
+}
+
+.pn-ProductNav_Contents-no-transition {
+  transition: none;
+}
+
+/* Create four equal columns that floats next to each other */
+
+.movies-heading1 {
+    margin:0px;
+    text-align:left;
+    padding: 0px 5px;
+    border-radius: 4px 7px 0 4px;
+    background-color: #d11507;
+    color:#fff;
+    border: none;
+    width: 100%;
+    height:40px;
+    margin-top: -4px;
+line-height: 40px;
+border-top:none;
+border-left:none;
+border-right:none;
+border-left:6px solid #088A68;
+}
+.movies-heading3 {
+    margin:0px;
+    text-align:left;
+    padding: 0px 5px;
+    border-radius: 4px 7px 0 4px;
+    background-color: #d11507;
+    color:#fff;
+    line-height: 40px;
+border-top:none;
+border-left:none;
+border-right:none;
+border-left:6px solid #088A68;
+    width: 100%;
+    height:40px;
+    margin-top: 7px;
+}
+
+/* Clear floats after the columns */
+.row7:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* On screens that are 600px wide or less, go from four columns to two columns */
+@media screen and (max-width: 600px) {
+.movies-heading1 {
+    margin-top: -4px;
+}
+.movies-heading3 {
+    margin-top: 7px;
+}
+}
+
+/* On screens that are 520px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 520px) {
+/* Create four equal columns that floats next to each other */
+.movies-heading1 {
+    margin-top: -4px;
+}
+ 
+.movies-heading3 {
+    margin-top: 7px;
+}
+}
+
+
+.column3 h1{
+position:absolute;
+width:60px;
+margin-top:5px;
+color: #fff;
+line-height: 25px;
+background: #088A68;
+border-radius:7px;
+opacity: 0.8;
+}
+.column3 h2{
+position:absolute;
+width:100px;
+margin-top:-30px;
+color: #fff;
+line-height: 25px;
+background: #088A68;
+border-radius:7px;
+opacity: 0.8;
+}
+.h1{
+position:absolute;
+width:60px;
+margin-top:5px;
+color: #fff;
+line-height: 25px;
+background: #088A68;
+border-radius:7px;
+opacity: 0.8;
+}
+.h3{
+position:absolute;
+width:100px;
+margin-top:-58px;
+color: #fff;
+line-height: 25px;
+background: #088A68;
+border-radius:7px;
+opacity: 0.8;
+}
+.column3 {
+opacity:0.9;
+  float: left;
+  width: 18%;
+  padding: 0px;
+  margin:1%;
+  margin-left: 0.8%;
+border:2px solid #d11507;
+        border-radius: 10px 10px 10px 0;
+        font-size: 15px;
+        color:#fff;
+        background: #d11507;
+image-rendering: auto;
+-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.column3:hover{
+background: #8b0000;
+border:2px solid #8b0000;
+-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* On screens that are 600px wide or less, go from four columns to two columns */
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 23%;
+  }
+.column3:hover{
+width:23%;
+}
+}
+
+/* On screens that are 520px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 520px) {
+  .column3 {width: 43%;
+margin:8px;
+margin-left:4%;
+  }
+.column3:hover{
+width:43%;
+}
+}
+
 #cccc{
 padding: 10px;
 }
@@ -727,4 +1047,5 @@ border-radius: 7px;
 .tenn::placeholder{
 color:#000000;
 }
+
 </style>
