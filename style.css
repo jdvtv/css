@@ -247,13 +247,234 @@ padding: 1px;
 img {vertical-align: middle;
          border-radius: 10px;
  }
-* {
-  box-sizing: inherit;
+
+#paginacao1,#paginacao2,#paginacao3,#paginacao4 {
+opacity: 0;
+margin-top:-90px;
+position: absolute;
 }
-.caption-text{
-line-height: 25px;
-color:#fff;
+
+.containerp{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+position: relative;
+top:-15px;
+}
+
+.box-paginacao {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.box-paginacao .box-vitrines {
+  width: 100%;
+  height: 1100px;
+  float: center;
+  overflow: hidden;
+  position: relative;
+}
+.box-paginacao ul {
+  width: 100%;
+  height: auto;
+  float: center;
+margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box-paginacao .vitrine1,
+.box-paginacao .vitrine2,
+.box-paginacao .vitrine3,
+.box-paginacao .vitrine4 {
 margin-top:0px;
+  width: 100%;
+  height: 2000px;
+  float: center;
+  margin-bottom: 43px;
+margin-left:0px;
+}
+@media screen and (max-width: 600px) {
+.containerp{
+top:0px;
+}
+.box-paginacao .box-vitrines {
+  height: 1075px;
+}
+
+.box-paginacao .vitrine1{
+height: 1085px;
+margin-top:-10px;
+}
+.box-paginacao .vitrine2,
+.box-paginacao .vitrine3,
+.box-paginacao .vitrine4 {
+  height: 1085px;
+
+}
+}
+
+@media screen and (max-width: 520px) {
+.containerp{
+top:0px;
+}
+
+.box-paginacao .box-vitrines {
+  height: 2070px;
+}
+
+.box-paginacao .vitrine1{
+height: 2120px;
+margin-top:-10px;
+}
+.box-paginacao .vitrine2,
+.box-paginacao .vitrine3,
+.box-paginacao .vitrine4 {
+  height: 2120px;
+
+}
+}
+
+.btn-paginacao {
+display: flex;
+background: #088A68;
+border-radius:7px;
+  width: 100%;
+  height: 50px;
+  float: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  left: 0;
+  bottom:40px;
+}
+.btn-ul {
+margin-left:40%;
+margin-top:5px;
+  width: auto;
+  height: auto;
+}
+.btn-li{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 0 15px 0 0;
+  border: 0;
+list-style:none;
+}
+.btn-li:last-child {
+  margin: 0;
+}
+.btn-ul label {
+margin-left:-20px;
+  width: 35px;
+  height: 35px;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color .25s ease-in-out;
+background: #f1f1f1;
+}
+.btn-ul  label:hover {
+  background-color: #606060;
+  color: #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+.btn-paginacao {
+  bottom:60px;
+}
+.btn-ul {
+margin-left:0;
+margin-top:5px;
+  
+}
+}
+@media screen and (max-width: 520px) {
+.btn-paginacao {
+  bottom:-40px;
+}
+.btn-ul {
+margin-left:10%;
+margin-top:5px;
+  
+}
+}
+
+#paginacao1:checked ~ .box-vitrines > ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(5px);
+}
+
+#paginacao1:checked ~ .box-vitrines label[for="paginacao1"] {
+  background-color: #088A68;
+  color: #f1f1f1;
+}
+
+#paginacao2:checked ~ .box-vitrines > ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-2038px);
+}
+
+#paginacao2:checked ~ .box-vitrines label[for="paginacao2"] {
+  background-color: #088A68;
+  color: #f1f1f1;
+}
+
+#paginacao3:checked ~ .box-vitrines > ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-4080px);
+}
+
+#paginacao3:checked ~ .box-vitrines label[for="paginacao3"] {
+  background-color: #088A68;
+  color: #f1f1f1;
+}
+
+#paginacao4:checked ~ .box-vitrines > ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-6125px);
+}
+
+#paginacao4:checked ~ .box-vitrines label[for="paginacao4"] {
+  background-color: #088A68;
+  color: #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+#paginacao1:checked ~ .box-vitrines > ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-15px);
+}
+#paginacao2:checked ~ .box-vitrines > ul {
+  transform: translateY(-1142px);
+}
+#paginacao3:checked ~ .box-vitrines > ul {
+  transform: translateY(-2270px);
+}
+#paginacao4:checked ~ .box-vitrines > ul {
+  transform: translateY(-3395px);
+}
+}
+
+@media screen and (max-width: 520px) {
+#paginacao1:checked ~ .box-vitrines > ul {
+  transition: transform .7s ease-in-out;
+  transform: translateY(-15px);
+}
+#paginacao2:checked ~ .box-vitrines > ul {
+  transform: translateY(-2181px);
+}
+#paginacao3:checked ~ .box-vitrines > ul {
+  transform: translateY(-4343px);
+}
+#paginacao4:checked ~ .box-vitrines > ul {
+  transform: translateY(-6505px);
+}
 }
 
 /* Create four equal columns that floats next to each other */
