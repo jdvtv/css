@@ -1,7 +1,6 @@
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-*/links img\*
 var href1 = 'https://jdv-tv9.webnode.com/filme-10x10/';
 var href2 = 'https://jdv-tv9.webnode.com/';
 var href3 = 'https://jdv-tv9.webnode.com/';
@@ -82,8 +81,7 @@ var href77 = 'https://jdv-tv9.webnode.com/filme-10x10/';
 var href78 = 'https://jdv-tv9.webnode.com/';
 var href79 = 'https://jdv-tv9.webnode.com/';
 var href80 = 'https://jdv-tv9.webnode.com/';
-
-*/função add link\*
+//
 $('.link1').on('click', function(){
 	console.log('hola');
 	$('a').attr('href', href1);
@@ -379,7 +377,7 @@ $('.link80').on('click', function(){
 	$('a').attr('href', href80);
 });
 
-/*sources img da box*/
+//
 var image = new Image();
 image.onload = function () {   document.getElementById('id1').setAttribute('src', this.src);
 };
