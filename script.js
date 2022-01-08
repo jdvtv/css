@@ -1,5 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
+
 var href1 = 'https://jdv-tv9.webnode.com/filme-10x10/';
 var href2 = 'https://jdv-tv9.webnode.com/';
 var href3 = 'https://jdv-tv9.webnode.com/';
@@ -83,7 +84,7 @@ var href80 = 'https://jdv-tv9.webnode.com/';
 
 $('.link1').on('click', function(){
 	console.log('hola');
-	$('a').attr('href', href1);
+	$('a').attr('href', 'https://jdv-tv9.webnode.com/filme-10x10/');
 });
 
 $('.link2').on('click', function(){
