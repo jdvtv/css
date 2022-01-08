@@ -80,7 +80,7 @@ var href77 = 'https://jdv-tv9.webnode.com/filme-10x10/';
 var href78 = 'https://jdv-tv9.webnode.com/';
 var href79 = 'https://jdv-tv9.webnode.com/';
 var href80 = 'https://jdv-tv9.webnode.com/';
-//
+
 $('.link1').on('click', function(){
 	console.log('hola');
 	$('a').attr('href', href1);
