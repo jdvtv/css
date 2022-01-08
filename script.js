@@ -1,5 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
 
-<
 var href1 = 'https://jdv-tv9.webnode.com/filme-10x10/';
 var href2 = 'https://jdv-tv9.webnode.com/';
 var href3 = 'https://jdv-tv9.webnode.com/';
@@ -778,3 +778,4 @@ image.src = 'https://d6scj24zvfbbo.cloudfront.net/cce50a158ea08b2cfd0463d44cdf1f
 
 
 >
+</script>
