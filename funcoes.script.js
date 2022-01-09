@@ -1,5 +1,4 @@
 <script>
-*
 $(document).ready(function () {
  
     /* initially hide product list items */
