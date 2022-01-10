@@ -1,5 +1,5 @@
    <script type="text/javascript">
-
+*();
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
 
