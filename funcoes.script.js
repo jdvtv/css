@@ -1,5 +1,5 @@
    <script type="text/javascript">
-*();
+$function(
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
 
@@ -21,4 +21,5 @@ $(window).scroll(function() {
         $('#navbar').removeClass('floatingNav');
     }
 });
+);
       </script>
