@@ -70,104 +70,6 @@ padding-top: 2px;
 color: #000000;
 }
 
-#open-modal{
-outline: none;
-background: none;
-border:none;
-color:#f1f1f1;
-font-size:18px;
-}
-/* The Modal (background) */
-.modal {
-  display:none;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  top:60%;
-  left:50%;
-  color: #4a4a4a;
-  max-width: 100%;
-  position: relative;
-  border-radius:10px;
-  border: 1px solid #ccc;
-  width: 80%; /* Could be more or less, depending on screen size */
-  transform: translate(-50% , -50%);
-}
-
-.modal-header{
-height:60px;
-  align-items: stretch;
-  box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
-  display: flex;
-}
-
-.modal-header-title{
-  align-items: center;
-  color: #363636;
-  display: flex;
-  flex-grow: 1;
-  font-weight: 700;
-  padding: 5px 15px;
-font-size:20px;
-}
-.modal-header-icon{
-
-    background: 0 0;
-    border: none;
-    color: currentColor;
-    font-family: inherit;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-}
-
-#modal-content.animation-1{
-  animation: animation-1 0.5s forwards;
-}
-.modal-body{
-  padding: 5px 15px;
-}
-@keyframes animation-1{
-  0% {
-    transform: translate(-50%,-50%) scale(0);
-  }
-  50% {
-    transform: translate(-50%,-50%) scale(1.2);
-  }
-  70% {
-    transform: translate(-50%,-50%) scale(0.9);
-  }
-  100% {
-    transform: translate(-50%,-50%) scale(1.2);
-  }
-}
-@media screen and (max-width: 600px) {
-.modal-content {
-top:100%;
-}
-}
-@media screen and (max-width: 520px) {
-.modal-content {
-top:50%;
-}
-}
-
 div.head{
   background-color: #363636;
 margin-top: 67px;
@@ -239,7 +141,6 @@ div.scrollmenu{
 display: flex;
 }
 }
-
 .column5 {
   float: left;
   width: 100.00%;
@@ -252,13 +153,11 @@ padding: 1px;
 img {vertical-align: middle;
          border-radius: 10px;
  }
-
 #paginacao1,#paginacao2,#paginacao3,#paginacao4 {
 opacity: 0;
 margin-top:-90px;
 position: absolute;
 }
-
 .containerp{
   width: 100%;
   height: auto;
@@ -266,7 +165,6 @@ position: absolute;
 position: relative;
 top:-15px;
 }
-
 .box-paginacao {
   width: 100%;
   height: auto;
@@ -287,7 +185,6 @@ margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .box-paginacao .vitrine1,
 .box-paginacao .vitrine2,
 .box-paginacao .vitrine3,
@@ -397,7 +294,6 @@ background: #f1f1f1;
 .btn-ul {
 margin-left:0;
 margin-top:5px;
-  
 }
 }
 @media screen and (max-width: 520px) {
@@ -406,46 +302,37 @@ margin-top:5px;
 }
 .btn-ul {
 margin-left:10%;
-margin-top:5px;
-  
+margin-top:5px;  
 }
 }
-
 #paginacao1:checked ~ .box-vitrines > ul {
   transition: transform .7s ease-in-out;
   transform: translateY(5px);
 }
-
 #paginacao1:checked ~ .box-vitrines label[for="paginacao1"] {
   background-color: #088A68;
   color: #f1f1f1;
 }
-
 #paginacao2:checked ~ .box-vitrines > ul {
   transition: transform .7s ease-in-out;
   transform: translateY(-2038px);
 }
-
 #paginacao2:checked ~ .box-vitrines label[for="paginacao2"] {
   background-color: #088A68;
   color: #f1f1f1;
 }
-
 #paginacao3:checked ~ .box-vitrines > ul {
   transition: transform .7s ease-in-out;
   transform: translateY(-4080px);
 }
-
 #paginacao3:checked ~ .box-vitrines label[for="paginacao3"] {
   background-color: #088A68;
   color: #f1f1f1;
 }
-
 #paginacao4:checked ~ .box-vitrines > ul {
   transition: transform .7s ease-in-out;
   transform: translateY(-6125px);
 }
-
 #paginacao4:checked ~ .box-vitrines label[for="paginacao4"] {
   background-color: #088A68;
   color: #f1f1f1;
@@ -465,7 +352,6 @@ margin-top:5px;
   transform: translateY(-3395px);
 }
 }
-
 @media screen and (max-width: 520px) {
 #paginacao1:checked ~ .box-vitrines > ul {
   transition: transform .7s ease-in-out;
@@ -481,41 +367,7 @@ margin-top:5px;
   transform: translateY(-6505px);
 }
 }
-
 /* Create four equal columns that floats next to each other */
-
-.movies-heading1 {
-    margin:0px;
-    text-align:left;
-    padding: 0px 5px;
-    border-radius: 4px 7px 0 4px;
-    background-color: #d11507;
-    color:#fff;
-    width: 100%;
-    height:40px;
-    margin-top: 4px;
-line-height: 40px;
-border-top:none;
-border-bottom:none;
-border-right:none;
-border-left:6px solid #088A68;
-}
-.movies-heading2{
-margin:0px;
-    text-align:left;
-    padding: 0px 5px;
-    border-radius: 4px 7px 0 4px;
-    background-color: #d11507;
-    color:#fff;
-    width: 100%;
-    height:40px;
-    margin-top: 8px;
-line-height: 40px;
-border-top:none;
-border-bottom:none;
-border-right:none;
-border-left:6px solid #088A68;
-}
 .movies-heading3 {
     margin:0px;
     text-align:left;
@@ -540,32 +392,17 @@ border-left:6px solid #088A68;
 }
 /* On screens that are 600px wide or less, go from four columns to two columns */
 @media screen and (max-width: 600px) {
-.movies-heading1 {
-    margin-top: -4px;
-}
-.movies-heading2 {
-
-}
 .movies-heading3 {
     margin-top: 7px;
 }
 }
-
 /* On screens that are 520px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 520px) {
 /* Create four equal columns that floats next to each other */
-.movies-heading1 {
-    margin-top: -18px;
-}
-.movies-heading2{
-margin-top: 8px;
-}
 .movies-heading3 {
     margin-top: 10px;
 }
 }
-
-
 .column3 h1{
 position:absolute;
 margin-left:4px;
