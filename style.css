@@ -56,7 +56,6 @@ ul {
   transform: rotate(-45deg) translate(0, -1px);
 }
 #menus{
-overflow: auto; white-space: nowrap;
   position: absolute;
   width: 240px;
   height: 400px;
