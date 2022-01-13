@@ -26,7 +26,7 @@ text-decoration: none;
 .a2:hover{
 width:240px;
 color:#d11507;
-background:#ddd;
+background:#ff6666 rgb(255, 102, 102) hsl(0, 100%, 70%);
 }
 #menusToggle {
   display: flex;
