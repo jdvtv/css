@@ -4,6 +4,30 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+.fa-log{
+font-size: 18px;
+margin-left:100px;
+margin-top:15px;
+}
+ .a2{
+padding:10px 40px;
+line-height:-22px;
+margin-top:5px;
+margin-left:-20px;
+height:40px;
+width:240px;
+text-decoration: none;
+  color: #000000;
+  opacity:1;
+  font-family: 'work sans', sans serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+.a2:hover{
+width:240px;
+color:#d11507;
+background:#ddd;
+}
 #menusToggle {
   display: flex;
   flex-direction: column;
@@ -56,6 +80,7 @@ ul {
   transform: rotate(-45deg) translate(0, -1px);
 }
 #menus{
+border-radius:4px;
   position: absolute;
   width: 240px;
   height: 400px;
