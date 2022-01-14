@@ -49,6 +49,7 @@ background:#F5A9A9;
 }
 #menusToggle span{
   display: flex;
+position: absolute;
   width: 29px;
   height: 3px;
   margin-bottom: 5px;
