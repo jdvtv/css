@@ -79,14 +79,14 @@ background:#F5A9A9;
 #menusToggle input:checked ~ span:nth-last-child(2){
   transform: rotate(-45deg) translate(0, -1px);
 }
-#menus{
+.menus{
 border-radius:4px;
   position: absolute;
   width: 240px;
   height: 400px;
   box-shadow: 0 0 10px #85888C;
-  margin: 0px 0 0 -50px;
-  padding: 0px;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
   padding-top: 125px;
   background-color: #F5F6FA;
   -webkit-font-smoothing: antialiased;
