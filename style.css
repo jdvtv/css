@@ -99,7 +99,7 @@ border-radius:4px;
   padding: 10px 0;
   transition-delay: 2s;
 }
-#menusToggle input:checked ~ menus
+#menusToggle input:checked ~ #menus
 {
   transform: none;
 }
