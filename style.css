@@ -72,6 +72,7 @@ border:2px solid #ffff00;
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
   background: #36383F;
+top:5px;
 }
 #menusToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
