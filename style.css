@@ -72,14 +72,13 @@ border:2px solid #ffff00;
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
   background: #36383F;
-top:5px;
 }
 #menusToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 #menusToggle input:checked ~ span:nth-last-child(2){
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(-3px, -1px);
 }
 .menus{
 border-radius:4px;
