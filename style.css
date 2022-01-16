@@ -29,7 +29,6 @@ color:#d11507;
 background:#F5A9A9;
 }
 #menusToggle {
-  display: flex;
   flex-direction:column;
   position: relative;
   top:2px;
