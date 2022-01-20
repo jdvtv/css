@@ -227,7 +227,7 @@ margin-left:-130px;
 border-radius:4px;
 }
 #add-link-form {
-  
+  display: none;
   background: #444;
   padding:20px;
   color: #fff;
@@ -238,7 +238,6 @@ font-size:20;
   font-weight:900;
 }
 #add-link-form input {
-display:none;
   margin: 5px 0;
   width:100%;
   color: #333;
