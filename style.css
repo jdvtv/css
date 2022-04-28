@@ -1,13 +1,5 @@
 <style>
 .{}
-.sectiontop{margin-top:-60px;display:block;animation:bounc 1s alternate}@keyframes bounc {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-40px);
-  }
-}
 .content1 {
 	max-width: 650px;
 	margin: 0 auto;
