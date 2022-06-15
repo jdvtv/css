@@ -2,6 +2,7 @@
 .{}
 .section{
 bottom:0;
+height:auto;
 }
 .sectiontop{bottom:60px; animation:bounc 1s alternate}@keyframes bounc {
   from {
