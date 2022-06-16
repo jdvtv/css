@@ -44,12 +44,12 @@ bottom:0;
 		font-weight: bold;
 		line-height: 1.5;
 	}
-@media screen e (max-width:600px){
+@media screen and (max-width:600px){
 .txt{
 top:45%;
 }
 }
-@media screen e (max-width:520px){
+@media screen and (max-width:520px){
 txt{
 top:55%;
 }
