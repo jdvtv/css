@@ -1,9 +1,9 @@
 <style>
 .{}
 .section{
-bottom:0;
+bottom:-60px;
 }
-.sectiontop{bottom:60px; animation:bounc 1s alternate}@keyframes bounc {
+.sectiontop{bottom:0px; animation:bounc 1s alternate}@keyframes bounc {
   from {
     transform: translateY(0);
   }
