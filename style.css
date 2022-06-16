@@ -35,7 +35,7 @@ bottom:0;
 	.txt{
 		color: #666;
 		text-align: center;
-		top: 30%;
+		top: 45%;
                 left:0;
                 right:0;
 		position: fixed;
@@ -46,12 +46,12 @@ bottom:0;
 	}
 @media screen and (max-width:600px){
 .txt{
-top:45%;
+top:50%;
 }
 }
 @media screen and (max-width:520px){
 txt{
-top:55%;
+top:65%;
 }
 }
 
