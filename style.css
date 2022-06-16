@@ -1,16 +1,5 @@
 <style>
 .{}
-.section{
-top:60px;
-}
-.sectiontop{top:0px; animation:bounc 1s alternate}@keyframes bounc {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
 .content1 {
 	width: 100%;
 	margin: 0 auto;
