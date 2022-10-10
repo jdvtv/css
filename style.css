@@ -9,7 +9,10 @@
   font-style: normal;
   font-display: block;
 }
-
+[class^="Ji-"], [class*=" Ji-"]{
+font-family:'Roboto','sans-sarif';
+font-weight: 700;
+}
 [class^="Jicon-"], [class*=" Jicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Font-Jicon' !important;
