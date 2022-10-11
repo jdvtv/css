@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Font-Jicon';
-  src:  url('https://i.icomoon.io/public/temp/02f279c98c/UntitledProject/Font-Jicon.eot?hxid8e');
-  src:  url('https://i.icomoon.io/public/temp/02f279c98c/UntitledProject/Font-Jicon.eot?hxid8e#iefix') format('embedded-opentype'),
-    url('https://i.icomoon.io/public/temp/02f279c98c/UntitledProject/Font-Jicon.ttf?hxid8e') format('truetype'),
-    url('https://i.icomoon.io/public/temp/02f279c98c/UntitledProject/Font-Jicon.woff?hxid8e') format('woff'),
-    url('https://i.icomoon.io/public/temp/02f279c98c/UntitledProject/Font-Jicon.svg?hxid8e#Font-Jicon') format('svg');
+  src:  url('https://cdn.jsdelivr.net/gh/jdvtv/css@');
+  src:  url('https://cdn.jsdelivr.net/gh/jdvtv/css@') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/jdvtv/css@d7f9c0980716caf45468b24240013bae1eb0932e/Font-Jicon.ttf') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/jdvtv/css@') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/jdvtv/css@') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
