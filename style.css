@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Font-Jicon';
-  src:  url('https://cdn.jsdelivr.net/gh/jdvtv/css@');
-  src:  url('https://cdn.jsdelivr.net/gh/jdvtv/css@') format('embedded-opentype'),
+  src:  url('https://cdn.jsdelivr.net/gh/jdvtv/css@61845df09a54741bbf7c107ba5292f3320b8abb1/Font-Jicon.eot');
+  src:  url('https://cdn.jsdelivr.net/gh/jdvtv/css@61845df09a54741bbf7c107ba5292f3320b8abb1/Font-Jicon.eot') format('embedded-opentype'),
     url('https://cdn.jsdelivr.net/gh/jdvtv/css@d7f9c0980716caf45468b24240013bae1eb0932e/Font-Jicon.ttf') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/jdvtv/css@') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/jdvtv/css@') format('svg');
+    url('https://cdn.jsdelivr.net/gh/jdvtv/css@7bddf4573711de74c74202a61023624a09fb4f43/Font-Jicon.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/jdvtv/css@a922e88e11007047cdaa0cc9b4cff8aad38f29fa/Font-Jicon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
