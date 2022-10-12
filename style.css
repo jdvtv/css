@@ -14,7 +14,7 @@
   font-family: 'Font-Jicon', 'Audiowide',sans-sarif !important;
   speak: never;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -33,7 +33,7 @@
 /*font-face-text*/
 /* latin-ext */
 @font-face {
-  letter-spacing:1.5px;
+  letter-spacing:1px;
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
@@ -42,7 +42,7 @@
 }
 /* latin */
 @font-face {
-letter-spacing:1.5px;
+letter-spacing:1px;
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
