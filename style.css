@@ -9,12 +9,9 @@
   font-style: normal;
   font-display: block;
 }
-[class^="Ji"], [class*=" Ji"] {
-font-family: "Audiowide", sans-serif;
-}
 [class^="Jicon-"], [class*=" Jicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Font-Jicon' !important;
+  font-family: 'Font-Jicon', 'Audiowide', sans-serif !important;
   speak: never;
   font-style: normal;
   font-weight: 700;
