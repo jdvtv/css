@@ -10,7 +10,6 @@
   font-display: block;
 }
 [class^="Ji"], [class*=" Ji"]{
-font-family:'Audiowide',sans-sarif;
 font-style: normal;
 font-weight: '700';
 font-variant: normal;
@@ -20,10 +19,10 @@ letter-spacing:2px;
 }
 [class^="Jicon-"], [class*=" Jicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Font-Jicon' !important;
+  font-family: 'Font-Jicon','Audiowide',sans-sarif;!important;
   speak: never;
   font-style: normal;
-  font-weight: '400';
+  
   font-variant: normal;
   text-transform: none;
   line-height: 1;
