@@ -22,7 +22,7 @@
 /*LINHA ESCURA DA NAV*/ 
 .floatingNav { border-radius: 2px; box-shadow: 0px 1px 10px #a51b0b; }
  
-.title{ width:auto; font-family: 'Roboto', sans-serif; font-size:29px; color:#fff;font-weight:700;margin-top:20px; } 
+.title{ width:auto; font-family: 'Roboto', sans-serif; font-size:29px; color:#fff;font-weight:700;margin-top:20px;margin-left:-80px; } 
 
 .tabela{ background: #f6f6f6; border-radius:4px; font-size:16px;font-weight:700;margin-top:-3px;line-height:20px;} 
 .tabela li{ list-style:none; height:25px; } 
