@@ -1,6 +1,5 @@
 
 <script>
-*{};
 var vid1 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie1.mp4';
 var vid2 = 'https://drive.google.com/uc?export=download&id=1OePkkm06wif2QDkHAMZZrPFIJgwv3OvV';
 var vid3 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie3.mp4';
@@ -70,18 +69,18 @@ $('.listItem12').on('click', function(){
 
 $('.listItem').hover(
   função() {
-    if(! $(this).hasClass('clicou'))
+    if(! $(this).hasClass('clicked'))
       $( this ).style({'background': '#000000'}, 0);
 }, função() {
-    if(! $(this).hasClass("clicou'))
+    if(! $(this).hasClass("clicked'))
       $( this ).style({'background':'#000000'}, 0);
 }
 );
 
 $('.listItem').click(function(){
-  if($(this).hasClass('clicou'))
-    $(this).removeClass('clicou');
+  if($(this).hasClass('clicked'))
+    $(this).removeClass('clicked');
   outro
-    $(this).addClass('clicou');
+    $(this).addClass('clicked');
 })
 </script>
