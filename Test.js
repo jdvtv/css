@@ -1,5 +1,4 @@
 
-<script>
 var vid1 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie1.mp4';
 var vid2 = 'https://drive.google.com/uc?export=download&id=1OePkkm06wif2QDkHAMZZrPFIJgwv3OvV';
 var vid3 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie3.mp4';
@@ -83,4 +82,4 @@ $('.listItem').click(function(){
   outro
     $(this).addClass('clicked');
 })
-</script>
+
