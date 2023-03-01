@@ -67,19 +67,20 @@ $('.listItem12').on('click', function(){
 
 
 $('.listItem').hover(
-  função() {
+  function() {
     if(! $(this).hasClass('clicked'))
       $( this ).style({'background': '#000000'}, 0);
-}, função() {
+}, function() {
     if(! $(this).hasClass("clicked'))
       $( this ).style({'background':'#000000'}, 0);
 }
 );
 
-$('.listItem').click(function(){
-  if($(this).hasClass('clicked'))
+$('.listItem').click(
+  function(){
+  if(! $(this).hasClass('clicked'))
     $(this).removeClass('clicked');
-  outro
+  out
     $(this).addClass('clicked');
 })
 
