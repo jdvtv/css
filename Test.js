@@ -1,8 +1,4 @@
-<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
-<script type="text/babel">
 // Let's create a "real-time search" component
 
 var SearchExample = React.createClass({
@@ -77,4 +73,4 @@ var libraries = [
 ReactDOM.render(
     <SearchExample items={ libraries } />,
     document.getElementById('resultados')
-);</script>
+);
