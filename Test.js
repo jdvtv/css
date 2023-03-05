@@ -1,86 +1,80 @@
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-var vid1 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie1.mp4';
-var vid2 = 'https://drive.google.com/uc?export=download&id=1OePkkm06wif2QDkHAMZZrPFIJgwv3OvV';
-var vid3 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie3.mp4';
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+<script type="text/babel">
+// Let's create a "real-time search" component
 
-var vid4 = 'https://www.youtube.com/embed/GhZ--UXzPfk';
-var vid5 = 'https://www.youtube.com/embed/O-D1VsX7J4s';
-var vid6 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie3.mp4';
+var SearchExample = React.createClass({
 
-var vid7 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie1.mp4';
-var vid8 = 'https://www.youtube.com/embed/O-D1VsX7J4s';
-var vid9 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie3.mp4';
+    getInitialState: function(){
+        return { searchString: '' };
+    },
 
-var vid10 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie1.mp4';
-var vid11 = 'https://www.youtube.com/embed/O-D1VsX7J4s';
-var vid12 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/24715/movie3.mp4';
+    handleChange: function(e){
 
-$('.thumb-1').on('clique', function(){
-	console.log('hola');
-	$('video').attr('src', vid1);
+        // If you comment out this line, the text box will not change its value.
+        // This is because in React, an input cannot change independently of the value
+        // that was assigned to it. In our case this is this.state.searchString.
+
+        this.setState({searchString:e.target.value});
+    },
+
+    render: function() {
+
+        var libraries = this.props.items,
+            searchString = this.state.searchString.trim().toLowerCase();
+
+
+        if(searchString.length > 0){
+
+            // We are searching. Filter the results.
+
+            libraries = libraries.filter(function(l){
+                return l.name.toLowerCase().match( searchString );
+            });
+
+        }
+
+        return <div>
+                    <input type="search" value={this.state.searchString} onChange={this.handleChange} placeholder="Digite uma palavra" />
+
+                    <td> 
+
+                        { libraries.map(function(l){
+                            return <th><a href={l.url}><img src={l.src}/><h2>{l.name}</h2><p>{l.description}</p></a></th>
+                        }) }
+
+                    </td>
+
+                </div>;
+
+    }
 });
 
-$('.thumb-2').on('clique', function(){
-	$('vídeo').attr('src', vid2);
-});
+                                                                                                                                                             
+var libraries = [
 
-$('.thumb-3').on('clique', function(){
-	$('.video').attr('src', vid3);
-});
+    {src:'https://d1di2lzuh97fh2.cloudfront.net/files/3w/3wg/3wgtbx.jpg?ph=762228e942', name: 'Backbone.js', description:'essa é a descricao de cada card', url: 'https://documentcloud.github.io/backbone/'},
+    {src:'https://762228e942.cbaul-cdnwnd.com/a39c552995a62183d70e3480929e57d4/200000010-8b6328b634/circulo-cruzado.svg?ph=762228e942', name: 'AngularJS', url: 'https://angularjs.org/'},
+    { name: 'jQuery', url: 'https://jquery.com/'},
+    { name: 'Prototype', url: 'https://www.prototypejs.org/'},
+    { name: 'React', url: 'https://facebook.github.io/react/'},
+    { name: 'Ember', url: 'https://emberjs.com/'},
+    { name: 'Knockout.js', url: 'https://knockoutjs.com/'},
+    { name: 'Dojo', url: 'https://dojotoolkit.org/'},
+    { name: 'Mootools', url: 'https://mootools.net/'},
+    { name: 'Underscore', url: 'https://documentcloud.github.io/underscore/'},
+    { name: 'Lodash', url: 'https://lodash.com/'},
+    { name: 'Moment', url: 'https://momentjs.com/'},
+    { name: 'Express', url: 'https://expressjs.com/'},
+    { name: 'Koa', url: 'https://koajs.com/'},
 
-$('.thumb-4').on('clique', function(){
-	$('vídeo').attr('src', vid4);
-});
+];
 
-$('.thumb-5').on('clique', function(){
-	$('vídeo').attr('src', vid5);
-});
+// Render the SearchExample component on the page
 
-$('.listItem6').on('click', function(){
-	$('vídeo').attr('src', vid6);
-});
-
-$('.listItem7').on('click', function(){
-	$('vídeo').attr('src', vid7);
-});
-
-$('.listItem8').on('click', function(){
-	$('vídeo').attr('src', vid8);
-});
-
-$('.listItem9').on('click', function(){
-	$('vídeo').attr('src', vid9);
-});
-
-$('.listItem10').on('click', function(){
-	$('video').attr('src', vid10);
-});
-
-$('.listItem11').on('click', function(){
-	$('vídeo').attr('src', vid11);
-});
-
-$('.listItem12').on('click', function(){
-	$('vídeo').attr('src', vid12);
-});
-
-
-
-$('.listItem').hover(
-  function() {
-    if(! $(this).hasClass('clicked'))
-      $( this ).style({'background': '#000000'}, 0);
-}, function() {
-    if(! $(this).hasClass("clicked'))
-      $( this ).style({'background':'#000000'}, 0);
-}
-);
-
-$('.listItem').click(
-  function(){
-  if(! $(this).hasClass('clicked'))
-    $(this).removeClass('clicked');
-  out
-    $(this).addClass('clicked');
-})
-
+ReactDOM.render(
+    <SearchExample items={ libraries } />,
+    document.getElementById('resultados')
+);</script>
