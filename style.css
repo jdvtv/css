@@ -15,7 +15,7 @@ ul { padding: 0; list-style-type: none; }
 #menusToggle input:checked ~ span{ opacity: 1; transform: rotate(45deg) translate(-3px, 3px); background: #36383F;width:29px;}
 #menusToggle input:checked ~ span:nth-last-child(3){ opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); width:29px;} #menusToggle input:checked ~ span:nth-last-child(2){ transform: rotate(-45deg) translate(3px, 1px); width:29x; }
 
-.menus{ border-radius:4px; position:absolute; width: 240px; box-shadow: 0 0 10px #85888C; margin: -50px 0 0 -50px; padding: 50px; padding-top: 125px; background-color: #F5F6FA; transform-origin: 0% 0%; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); webkit-font-smoothing: antialiased;}
+.menus{ border-radius:4px; position:absolute; width: 240px; box-shadow: 0 0 10px #85888C; margin: -50px 0 0 -50px; padding: 0; padding-top: 125px; background-color: #F5F6FA; transform-origin: 0% 0%; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); webkit-font-smoothing: antialiased;}
  #menusToggle input:checked ~ ul { transform: none; }
  #menus li { padding: 10px 0; transition-delay: 2s; }
 .a2{ padding:10px 40px; line-height:-22px; margin-top:5px; margin-left:-20px; height:40px; width:240px; text-decoration: none; color: #000000; opacity:1; font-family: 'work sans', sans serif; font-size: 18px; font-weight: 900; }
