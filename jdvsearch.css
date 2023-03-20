@@ -56,7 +56,7 @@ margin-left:-5px;
 input[type=search]{
     text-align: left;
     border: none;
-    padding: 12px 85px;
+    padding: 0 85px;
     font-size: 19px;
     box-shadow: 0 2px 4px #DDD;
     width: 100%;
