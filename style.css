@@ -28,8 +28,8 @@ ul { padding: 0; list-style-type: none; }
 
 .menus{ border-radius:4px; position:absolute; width: 240px; box-shadow: 0 0 10px #85888C; margin:-50px 0 0 0 -50px;top:-22px; left:-30px; padding:0; padding-top:125px; background-color: #F5F6FA; transform: 0% 0%; transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); webkit-font-smoothing: antialiased;}
  #menusToggle input:checked ~ ul { transform: none; }
- #menus li { padding: 10px 0; transition-delay: 2s; }
-.a2{ padding:10px 40px; line-height:-22px; margin-top:5px; margin-left:-20px; height:40px; width:240px; text-decoration: none; color: #000000; opacity:1; font-family: 'work sans', sans serif; font-size: 18px; font-weight: 900; }
+ .menus li { padding: 10px 20px; transition-delay: 2s; }
+.a2{ padding:0 0; margin-top:5px; line-height:26px; left:0px; height:40px; width:240px; text-decoration: none; color: #000000; opacity:1; font-family: 'work sans', sans serif; font-size: 18px; font-weight: 900; }
 .a2:hover{ width:240px; color:#d11507; background:#F5A9A9; } 
 
 /*LINHA ESCURA DA NAV*/ 
