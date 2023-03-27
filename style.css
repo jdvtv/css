@@ -1,7 +1,18 @@
 <style>
 *{}
+
+a{
+    text-decoration: none;
+	color:inherit;
+}
+.fa-fire{float:right;margin-top:15px}
+.fa-angle-righ{float:right;margin-top:10px;font-size:18px}
+.fa-star{color:#ffbf00}
+spam{font-family:'Roboto',sans-serif;font-size:14px;font-style:normal;font-variant:normal;font-weight:700;line-height:17px}
+
+
 /*NAVBAR DA JDVPLUS*/
-nav{justify-content:space-between;padding:0 10px;display:flex;align-items:center;width:100%;height:65px;background:#d11507;position:fixed;border-radius:0 0 4px 4px;left:0;top:0px;z-index:100;transition:top 0.4s;}
+nav{justify-content:space-between;padding:0 10px;align-items:center;width:100%;height:65px;background:#d11507;position:fixed;border-radius:0 0 4px 4px;left:0;top:0px;z-index:100;transition:top 0.4s;}
 
 nav .menu-btn{display:none}
 ul { padding: 0; list-style-type: none; } 
@@ -15,10 +26,10 @@ ul { padding: 0; list-style-type: none; }
 #menusToggle input:checked ~ span{ opacity: 1; transform: rotate(45deg) translate(-3px, 3px); background: #36383F;width:29px;}
 #menusToggle input:checked ~ span:nth-last-child(3){ opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); width:29px;} #menusToggle input:checked ~ span:nth-last-child(2){ transform: rotate(-45deg) translate(3px, 1px); width:29x; }
 
-.menus{ border-radius:4px; position:absolute; width: 240px; box-shadow: 0 0 10px #85888C; margin: -50px 0 0 -50px; padding: 0; padding-top: 125px; background-color: #F5F6FA; transform-origin: 0% 0%; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); webkit-font-smoothing: antialiased;}
+.menus{ border-radius:4px; position:absolute; width: 240px; box-shadow: 0 0 10px #85888C; margin:-50px 0 0 0 -50px;top:-22px; left:-30px; padding:0; padding-top:125px; background-color: #F5F6FA; transform: 0% 0%; transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); webkit-font-smoothing: antialiased;}
  #menusToggle input:checked ~ ul { transform: none; }
- #menus li { padding: 10px 0px; transition-delay: 2s; }
-.a2{ padding:0 30px; margin-top:5px; line-height:26px; margin-left:0; height:40px; width:240px; text-decoration: none; color: #000000; opacity:1; font-family: 'work sans', sans serif; font-size: 18px; font-weight: 900; }
+ #menus li { padding: 10px 0; transition-delay: 2s; }
+.a2{ padding:10px 40px; line-height:-22px; margin-top:5px; margin-left:-20px; height:40px; width:240px; text-decoration: none; color: #000000; opacity:1; font-family: 'work sans', sans serif; font-size: 18px; font-weight: 900; }
 .a2:hover{ width:240px; color:#d11507; background:#F5A9A9; } 
 
 /*LINHA ESCURA DA NAV*/ 
@@ -29,7 +40,7 @@ ul { padding: 0; list-style-type: none; }
 display:none;
 }
 .title-menu{
-width:240px;height:77px;margin-top:-122px; margin-left:0px;box-shadow: 0px 1px 10px #c0c0c0;}
+width:220px;height:77px;margin-top:-122px; margin-left:-30px;box-shadow: 0px 1px 10px #c0c0c0;}
 .fa-log{
 Content:url('https://762228e942.cbaul-cdnwnd.com/a39c552995a62183d70e3480929e57d4/200000007-0071a0071b/74%20Sem%20T%C3%ADtulo_20230113150707.png?ph=762228e942');
 text-indent: -10000px;
@@ -68,7 +79,8 @@ height:50px;
   font-size: 18px;
   font-weight: 900;
   border: none;
-  height:auto;
+  height:20px;
+  margin-left:104px;
 }
 .dropdown2 {
   position: relative;
@@ -286,9 +298,10 @@ backgroud:black;
 .logo-img5 img{
 width:50px; 
 height:50px; 
-margin-top:-7px;
+margin-top:-20px;
+margin-left:20px;
 }
-.title{ width:auto; font-family: 'Roboto', sans-serif; font-size:29px; color:#fff;font-weight:700;margin-top:-40px;margin-left:60px; } 
+.title{ width:auto; font-family: 'Roboto', sans-serif; font-size:29px; color:#fff;font-weight:700;margin-top:-40px;margin-left:75px; } 
 
  #menusToggle span{
 display:block;
