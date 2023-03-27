@@ -17,7 +17,7 @@ nav{justify-content:space-between;padding:0 10px;align-items:center;width:100%;h
 nav .menu-btn{display:none}
 ul { padding: 0; list-style-type: none; } 
 
-#menusToggle { flex-direction:column; position: relative; top:2px; left: 15px; z-index: 1; -webkit-user-select: none; user-select: none; } 
+#menusToggle { flex-direction:column; position: relative; top:21px; left: 15px; z-index: 1; -webkit-user-select: none; user-select: none; } 
 #menusToggle input{ display: flex; width: 40px; height: 32px; position: absolute; cursor: pointer; opacity: 0; z-index: 2; } #menusToggle span{ display: none; width:29px; height: 4.5px; margin-bottom: 5px; position: relative; background: #ffffff; border-radius: 3px; z-index: 1; transform-origin: 5px 7px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; } 
 #menusToggle span:first-child{ transform-origin: 0% 0%;} 
 #menusToggle span:nth-last-child(2){ transform-origin: 0% 100%; width:23px;} 
@@ -40,7 +40,7 @@ ul { padding: 0; list-style-type: none; }
 display:none;
 }
 .title-menu{
-width:220px;height:77px;margin-top:-122px; margin-left:-30px;box-shadow: 0px 1px 10px #c0c0c0;}
+width:240px;height:77px;margin-top:-122px; margin-left:0px;box-shadow: 0px 1px 10px #c0c0c0;}
 .fa-log{
 Content:url('https://762228e942.cbaul-cdnwnd.com/a39c552995a62183d70e3480929e57d4/200000007-0071a0071b/74%20Sem%20T%C3%ADtulo_20230113150707.png?ph=762228e942');
 text-indent: -10000px;
