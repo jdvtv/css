@@ -140,7 +140,7 @@ width:240px;
 .nav2.active {
   transform: translateX(0);
 }
-.toggle {
+.nav2.toggle {
   border: none;
   cursor: pointer;
   font-size: 20px;
