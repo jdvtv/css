@@ -275,14 +275,14 @@ color:#fff;
 
 .settings h3 {
   margin-top:-29px;
-  height:82px;
+  height:70px;
 Width:230px;
   box-shadow: 0 0 10px #85888C; 
 z-index:3;
 }
 .settings text{
   margin-left:70px;
-  vertical-align:-40px;
+  vertical-align:-27px;
 }
 .containerp{ width: 79%; height: auto; margin: 0 auto; position: relative; top:-15px;float:right; }
 
@@ -316,12 +316,6 @@ transform: translate(-100%,0);
 }
 .toggle{
 margin-top:-15px;
-}
-.settings h3 {
-height:70px;
-}
-.settings text{
-  vertical-align:-27px;
 }
 .containerp{width: 100%;  top:0px; float:center;}
 }
