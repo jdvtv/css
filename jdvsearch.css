@@ -68,7 +68,7 @@ height:63px;
 font-family:'roboto','sans-sarif';
 }
 
-td{
+.jdvtab{
     list-style: none;
     display: inline-block;
     width: 100%;
@@ -76,7 +76,7 @@ td{
 height:auto;
 overflow: none;
 }
-td th {
+.jdvtab th {
     width:100px;
     margin-left:5px;
     display: inline-block;
@@ -87,7 +87,7 @@ td th {
     border-radius:7px 7px 0 0;
     transition: 0.3s;
 }
-td th a{
+.jdvtab th a{
     height:110px;
     Width:90px;
     left: 10px;
@@ -96,7 +96,7 @@ td th a{
     color: #000000;
     
 }
-td th a h2{
+.jdvtab th a h2{
 margin-top:5px;
 text-align:left;
 background:#f2f2f2;
@@ -104,15 +104,15 @@ width:100px;
 margin-left:-5px;
 border-radius:0 0 5px 5px;
 }
-td th a p{
+.jdvtab th a p{
 display:none;
 margin-left:100px;
 }
-td th a img{
+.jdvtab th a img{
 height:100%;
 width:90px;
 }
-td th:hover{
+.jdvtab th:hover{
     background-color:#d8f2f1;
 }
 .search-box h3 {
@@ -188,18 +188,18 @@ Left:-55px;
 .search-box-jdv{
 width:910px;
 }
-td{
+.jdvtab{
 height:360px;
 overflow: auto;
 }
-td th{
+.jdvtab th{
 margin-left:0;
 display:block;
 width:100%;
 border-radius:7px;
 height:120px;
 }
-td th a{
+.jdvtab th a{
     height:110px;
     Width:100%;
     left: 10px;
@@ -208,14 +208,14 @@ td th a{
     color: #000000;
     
 }
-td th a h2{
+.jdvtab th a h2{
 margin-top:-105px;
 text-align:center;
 background:none;
 width:auto;
 margin-left:0;
 }
-td th a p{
+.jdvtab th a p{
 margin-left:100px;
 display:block;
 }
