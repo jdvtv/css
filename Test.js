@@ -35,13 +35,13 @@ var SearchExample = React.createClass({
         return <div>
                     <input id="searchjdv" type="search" value={this.state.searchString} onChange={this.handleChange} placeholder="Digite uma palavra" />
 
-                    <td class"jdvtab"> 
+                    <ta> 
 
                         { libraries.map(function(l){
-                            return <th><a href={l.url}><img src={l.src}/><h2>{l.name}</h2><p>{l.description}</p></a></th>
+                            return <tl><a href={l.url}><img src={l.src}/><h2>{l.name}</h2><p>{l.description}</p></a></tl>
                         }) }
 
-                    </td>
+                    </ta>
 
                 </div>;
 
