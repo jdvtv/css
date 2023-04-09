@@ -33,7 +33,7 @@ var SearchExample = React.createClass({
         }
 
         return <div>
-                    <input id="searchjdv" type="search" value={this.state.searchString} onChange={this.handleChange} placeholder="Digite uma palavra" />
+                    <textarea type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Digite uma palavra"></textarea>
 
                     <ta> 
 
