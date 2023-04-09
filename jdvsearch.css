@@ -68,7 +68,7 @@ height:63px;
 font-family:'roboto','sans-sarif';
 }
 
-.jdvtab{
+ta{
     list-style: none;
     display: inline-block;
     width: 100%;
@@ -76,7 +76,7 @@ font-family:'roboto','sans-sarif';
 height:auto;
 overflow: none;
 }
-.jdvtab th {
+ta tl {
     width:100px;
     margin-left:5px;
     display: inline-block;
@@ -87,7 +87,7 @@ overflow: none;
     border-radius:7px 7px 0 0;
     transition: 0.3s;
 }
-.jdvtab th a{
+ta tl a{
     height:110px;
     Width:90px;
     left: 10px;
@@ -96,7 +96,7 @@ overflow: none;
     color: #000000;
     
 }
-.jdvtab th a h2{
+ta tl a h2{
 margin-top:5px;
 text-align:left;
 background:#f2f2f2;
@@ -104,15 +104,15 @@ width:100px;
 margin-left:-5px;
 border-radius:0 0 5px 5px;
 }
-.jdvtab th a p{
+ta tl a p{
 display:none;
 margin-left:100px;
 }
-.jdvtab th a img{
+ta tl a img{
 height:100%;
 width:90px;
 }
-.jdvtab th:hover{
+ta tl:hover{
     background-color:#d8f2f1;
 }
 .search-box h3 {
@@ -188,18 +188,18 @@ Left:-55px;
 .search-box-jdv{
 width:910px;
 }
-.jdvtab{
+ta{
 height:360px;
 overflow: auto;
 }
-.jdvtab th{
+ta tl{
 margin-left:0;
 display:block;
 width:100%;
 border-radius:7px;
 height:120px;
 }
-.jdvtab th a{
+ta tl a{
     height:110px;
     Width:100%;
     left: 10px;
@@ -208,14 +208,14 @@ height:120px;
     color: #000000;
     
 }
-.jdvtab th a h2{
+ta tl a h2{
 margin-top:-105px;
 text-align:center;
 background:none;
 width:auto;
 margin-left:0;
 }
-.jdvtab th a p{
+ta tl a p{
 margin-left:100px;
 display:block;
 }
