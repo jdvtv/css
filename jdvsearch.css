@@ -87,13 +87,13 @@ ta tl {
     border-radius:7px 7px 0 0;
     transition: 0.3s;
 }
-.jlink{
+a.jlink{
     height:110px;
     Width:90px;
     left: 10px;
     line-height: 16px;  
 }
-.jname{
+h2.jname{
 margin-top:5px;
 text-align:left;
 background:#f2f2f2;
@@ -103,7 +103,7 @@ border-radius:0 0 5px 5px;
 font-size: 16px;
 color: #000000;
 }
-.jdescricao{
+p.jdescricao{
 display:none;
 margin-left:100px;
 font-size: 12px;
@@ -200,7 +200,7 @@ width:100%;
 border-radius:7px;
 height:120px;
 }
-.jlink{
+a.jlink{
     height:110px;
     Width:100%;
     left: 10px;
@@ -209,14 +209,14 @@ height:120px;
     color: #000000;
     
 }
-.jname{
+h2.jname{
 margin-top:-105px;
 text-align:center;
 background:none;
 width:auto;
 margin-left:0;
 }
-.jdescricao{
+p.jdescricao{
 margin-left:100px;
 display:block;
 }
