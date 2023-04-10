@@ -38,7 +38,7 @@ var SearchExample = React.createClass({
                     <ta> 
 
                         { libraries.map(function(l){
-                            return <tl><a class="jlink" href={l.url}><img src={l.src}/><h2 class="jname">{l.name}</h2><p class="jdescricao">{l.description}</p></a></tl>
+                            return <tl><a class="jlink" href={l.url}><img src={l.src}/><hj class="jname">{l.name}</hj><pj class="jdescricao">{l.description}</pj></a></tl>
                         }) }
 
                     </ta>
