@@ -151,7 +151,7 @@ li em {
   cursor: pointer;
   opacity: 1;
   transition: 0.2s;
-margin-right:-60px;
+margin-right:-40px;
 }
 @media screen and (max-width: 1024px){
 .jdvsearch{
