@@ -25,7 +25,7 @@ width:812px;
   height:45px;
   position:absolute;
   top: 20px;
-  Left:-100px;
+  Left:-80px;
   transform: translateX(-100%);
   background:none;
   color: #fff;
@@ -209,7 +209,7 @@ ta tl a{
     
 }
 ta tl a h2{
-margin-top:-105px;
+margin-top:0;
 text-align:center;
 background:none;
 width:auto;
