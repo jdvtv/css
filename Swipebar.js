@@ -32,7 +32,7 @@ function handleTouchMove(evt) {
   if ( xDiff > 0 ) {
     elm.style.top = '0px';
   } else {
-    elm.style.top = '-638px';
+    elm.style.top = '-500px';
   }
 
   xDown = null;
