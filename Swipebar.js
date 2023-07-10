@@ -84,7 +84,7 @@ function MenuLateral(){
 				if(dis.abierto){
 					dis.menu.style.top = 0+'px';
 				}else{
-					dis.menu.style.top =-350+'px';
+					dis.menu.style.top =-365+'px';
 				}
 			}
 
