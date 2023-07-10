@@ -74,7 +74,7 @@ function MenuLateral(){
 		//if(dis.touchsi){
 
 			if(dis.movido > 0){
-				dis.menu.style.top = 380+'px';
+				dis.menu.style.top = 370+'px';
 				dis.abierto  = true;
 
 			}else if(dis.movido < 0){
@@ -84,7 +84,7 @@ function MenuLateral(){
 				if(dis.abierto){
 					dis.menu.style.top = 0+'px';
 				}else{
-					dis.menu.style.top =-380+'px';
+					dis.menu.style.top =-370+'px';
 				}
 			}
 
