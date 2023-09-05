@@ -275,13 +275,14 @@ color:#fff;
 
 .settings h3 {
   margin-top:-29px;
+  margin-left:-5px;
   height:70px;
 Width:235px;
   box-shadow: 0 0 10px #85888C; 
 z-index:3;
 }
 .settings text{
-  margin-left:75px;
+  margin-left:70px;
   vertical-align:-27px;
 }
 .containerp{ width: 79%; height: auto; margin: 0 auto; position: relative; top:-15px;float:right; }
