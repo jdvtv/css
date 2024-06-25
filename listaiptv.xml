@@ -1,0 +1,156 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>Example Channel</title>
+        <description>Example channel description.</description>
+        <lastBuildDate>Thu May 19 2022 00:00:00 GMT+0200</lastBuildDate>
+        <language>en</language>
+        <image>
+            <url>http://msx.benzac.de/img/icon.png</url>
+        </image>
+        <item>
+            <guid>video1</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Video 1</media:title>
+            <media:description>Example description for Video 1.</media:description>
+            <media:category>MRSS</media:category>
+            <media:category>Video</media:category>
+            <media:category>Example</media:category>
+            <media:content url="http://msx.benzac.de/media/video1.mp4" medium="video" duration="118"></media:content>
+            <media:thumbnail url="http://msx.benzac.de/media/thumbs/video1.jpg"></media:thumbnail>
+        </item>
+        <item>
+            <guid>video2</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Video 2</media:title>
+            <media:description>Example description for Video 2.</media:description>
+            <media:category>MRSS</media:category>
+            <media:category>Video</media:category>
+            <media:category>Example</media:category>
+            <media:content url="http://msx.benzac.de/media/video2.mp4" medium="video" duration="16"></media:content>
+            <media:thumbnail url="http://msx.benzac.de/media/thumbs/video2.jpg"></media:thumbnail>
+        </item>
+        <item>
+            <guid>video3</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Video 3</media:title>
+            <media:description>Example description for Video 3.</media:description>
+            <media:category>MRSS</media:category>
+            <media:category>Video</media:category>
+            <media:category>Example</media:category>
+            <media:content url="http://msx.benzac.de/media/video3.mp4" medium="video" duration="112"></media:content>
+            <media:thumbnail url="http://msx.benzac.de/media/thumbs/video3.jpg"></media:thumbnail>
+        </item>
+        <item>
+            <guid>audio1</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Audio 1</media:title>
+            <media:description>Example description for Audio 1.</media:description>
+            <media:category>MRSS</media:category>
+            <media:category>Audio</media:category>
+            <media:category>Example</media:category>
+            <media:content url="http://msx.benzac.de/media/audio1.mp3" medium="audio" duration="272"></media:content>
+        </item> 
+        <item>
+            <guid>audio2</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Audio 2</media:title>
+            <media:description>Example description for Audio 2.</media:description>
+            <media:category>MRSS</media:category>
+            <media:category>Audio</media:category>
+            <media:category>Example</media:category>
+            <media:content url="http://msx.benzac.de/media/audio2.mp3" medium="audio" duration="310"></media:content>
+        </item>
+        <item>
+            <guid>audio3</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Audio 3</media:title>
+            <media:description>Example description for Audio 3.</media:description>
+            <media:category>MRSS</media:category>
+            <media:category>Audio</media:category>
+            <media:category>Example</media:category>
+            <media:content url="http://msx.benzac.de/media/audio3.mp3" medium="audio" duration="279"></media:content>
+        </item>
+        <item>
+            <guid>image1</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:content url="http://msx.benzac.de/img/bg1.jpg" medium="image">
+                <!-- Note: Media sub-elements can also be set inside the <media:content> tag -->
+                <media:title>Image 1</media:title>
+                <media:description>Example description for Image 1 with special characters: &quot;&lt;&amp;&gt;&quot;.</media:description>
+                <media:category>MRSS</media:category>
+                <media:category>Image</media:category>
+                <media:category>Example</media:category>
+                <media:thumbnail url="http://msx.benzac.de/img/bg1.jpg"></media:thumbnail>
+            </media:content>
+        </item>
+        <item>
+            <guid>image2</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:content url="http://msx.benzac.de/img/bg2.jpg" medium="image">
+                <!-- Note: Media sub-elements can also be set inside the <media:content> tag -->
+                <media:title>Image 2</media:title>
+                <media:description>Example description for Image 2 with special characters: &amp;quot;&amp;lt;&amp;amp;&amp;gt;&amp;quot;.</media:description>
+                <media:category>MRSS</media:category>
+                <media:category>Image</media:category>
+                <media:category>Example</media:category>
+                <media:thumbnail url="http://msx.benzac.de/img/bg2.jpg"></media:thumbnail>
+            </media:content>
+        </item>  
+        <item>
+            <guid>image3</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:content url="http://msx.benzac.de/img/bg3.jpg" medium="image">
+                <!-- Note: Media sub-elements can also be set inside the <media:content> tag -->
+                <media:title>Image 3</media:title>
+                <media:description><![CDATA[Example description for Image 3 with special characters: "<&>".]]></media:description>
+                <media:category>MRSS</media:category>
+                <media:category>Image</media:category>
+                <media:category>Example</media:category>
+                <media:thumbnail url="http://msx.benzac.de/img/bg3.jpg"></media:thumbnail>
+            </media:content>
+        </item>  
+        <item>
+            <guid>image4</guid>
+            <pubDate>Tue May 17 2022 00:00:00 GMT+0200</pubDate>
+            <media:content url="http://msx.benzac.de/img/test.jpg" medium="image">
+                <!-- Note: Media sub-elements can also be set inside the <media:content> tag -->
+                <media:title>Image 4</media:title>
+                <media:description>Example description for Image 4 with special characters: {chr:quot}{chr:lt}{chr:amp}{chr:gt}{chr:quot}.</media:description>
+                <media:category>MRSS</media:category>
+                <media:category>Image</media:category>
+                <media:category>Example</media:category>
+                <media:thumbnail url="http://msx.benzac.de/img/test.jpg"></media:thumbnail>
+            </media:content>
+        </item>
+        <item>
+            <guid>plugin1</guid>
+            <pubDate>Thu May 19 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Plugin 1 (YouTube)</media:title>
+            <media:category>MRSS</media:category>
+            <media:category>YouTube</media:category>
+            <media:category>Plugin</media:category>
+            <media:thumbnail url="https://img.youtube.com/vi/PRy2CFVlPOA/hqdefault.jpg"></media:thumbnail>
+            <media:content url="plugin:http://msx.benzac.de/plugins/youtube.html?id=PRy2CFVlPOA" medium="video" duration="10837"></media:content>
+        </item>
+        <item>
+            <guid>plugin2</guid>
+            <pubDate>Thu May 19 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Plugin 2 (Vimeo)</media:title>
+            <media:category>MRSS</media:category>
+            <media:category>Vimeo</media:category>
+            <media:category>Plugin</media:category>
+            <media:content url="plugin:http://msx.benzac.de/plugins/vimeo.html?id=54802209" medium="video" duration="189"></media:content>
+        </item>
+        <item>
+            <guid>plugin3</guid>
+            <pubDate>Thu May 19 2022 00:00:00 GMT+0200</pubDate>
+            <media:title>Plugin 3 (SoundCloud)</media:title>
+            <media:category>MRSS</media:category>
+            <media:category>SoundCloud</media:category>
+            <media:category>Plugin</media:category>
+            <media:content url="plugin:http://msx.benzac.de/plugins/soundcloud.html?id=143041228" medium="audio" duration="7252"></media:content>
+        </item>
+    </channel>
+</rss>
