@@ -50,7 +50,7 @@ margin-left:10px;
     background-color:#fff;
 width:100%;
 margin-top:-25px;
-margin-left:-5px;
+margin-left:0px;
 }
 
 input{
@@ -76,23 +76,6 @@ font-family:'roboto','sans-sarif';
   margin-left:-10px;
 }
  .show{display:block}
-.input-jdvtv{background:#F5F6FA;  line-height:20px; width:100%; height: 67px; padding:0 80px; font-size: 20px; margin: 0px 0; border:none; outline:none; color:#d11507; box-shadow: 0 0 4px #85888C; }
-.input-jdvtv::-webkit-input-placeholder { font-family: FontAwesome; font-weight: normal; font-size: 20px; overflow: visible; color: #000000; }
- .input-jdvtv::-moz-placeholder { font-family: FontAwesome; font-weight: normal; overflow: visible; color: #000000; }
- .input-jdvtv:-ms-input-placeholder { font-family: FontAwesome; font-weight: normal; overflow: visible; color: #000000; } 
-
-.tabela{padding:0 20px; background: #f6f6f6; border-radius:0 0 4px 4px; font-size:16px;font-weight:700;margin-top:-1.5px;line-height:30px; height:auto;} 
-.tabela li{ list-style:none; height:30px; } 
-.tabela ul{ margin-top:0px; } 
-.tabela a{ margin-left:0px; } a{text-decoration:none}
-
-li em {
-  color:#d11507;
-  background:#F5A9A9;
-  font-weight:bold;
-  font-style:normal;
-  border-radius:5px;
-}
 [type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   width: 30px;
