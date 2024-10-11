@@ -43,6 +43,7 @@ text-indent: -10000px;
 .search-box-jdv{
 width:100%;
 margin-left:0px;
+padding:0 15px;
 }
 #resultados{
 font:14px normal Arial, sans-serif;
