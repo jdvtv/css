@@ -1,0 +1,25 @@
+Canais | ABERTO
+
+#EXTINF:-1 tvg-id="Globo" tvg-name="Globo" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | GLOBO",Globo RJ HD
+http://xcui.vitvabc.xyz:8880/flu-laliu/fPfYtxYgWe/16729
+
+#EXTINF:-1 tvg-id="Loading" tvg-name="Loading" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | Loading",Loadingtv HD
+https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Rede Brasil" tvg-name="Rede Brasil" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | Rede Brasil",Rede Brasil HD
+https://video01.logicahost.com.br/redebrasil02/redebrasil02/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Retro Cartoon" tvg-name="Retro Cartoon" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | Retro Cartoon",Retro Cartoon
+https://stmv1.srvif.com/retrotv/retrotv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Aracati" tvg-name="Aracati" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | Aracati",Aracati HD
+https://video04.logicahost.com.br/tvaracati/tvaracati/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Vivax" tvg-name="Vivax" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | Vivax",Vivax HD
+https://stmv2.samcast.com.br/marcus8647/marcus8647/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AniTv" tvg-name="AniTv" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | AniTv",AniTv HD
+https://stream.ichibantv.com:3764/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-id="Cultura" tvg-name="Cultura" tvg-logo="https://imgur.com/waZJG1M.png" group-title="Canais | Cultura",Cultura HD
+https://5b33b873179a2.streamlock.net:1443/live/livestream/playlist.m3u8
