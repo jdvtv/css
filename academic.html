@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://762228e942.cbaul-cdnwnd.com/a39c552995a62183d70e3480929e57d4/200000000-e6a2fe6a30/1604604344645.png?ph=762228e942">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #101010;
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            color: white;
+        }
+        .navbar .icons {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar .icons button ,#menuButton{
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Menu lateral */
+        .menu {
+            position: fixed;
+            top: -15px;
+            left: -40px;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            padding-top: 0px;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 10;
+        }
+        .menu.show {
+            transform: translateX(0);
+        }
+        #titlemenu{
+            position:relative;
+            height:55px;
+            width:100%;
+            background:#444;
+            top:-20px;
+        }
+        #titlemenu h2{
+            position:relative;
+            top:-31px;
+            margin-left:100px;
+        }
+        .menu li {
+            position:relative;
+            list-style: none;
+            margin: 8px 0;
+            top:-15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #444;
+        }
+        .close-menu {
+            position: relative;
+            top:17px;
+            left:20px;
+            background: none;
+            border: none;
+            color: white;
+            padding: 0px;
+            cursor: pointer;
+            margin: 0px;
+            font-size: 24px;
+        }
+
+        /* Modal de Personalização */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 70%;
+            width: 30%;
+            height: auto;
+            background-color:#222;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+        .modal-content {
+            position:relative;
+            background-color: #222;
+            padding: 0px;
+            top:-20px;
+            border-radius: 8px;
+            color: white;
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        .modal-content label {
+            display: block;
+            margin: 10px 0;
+        }
+        .modal-content select, .modal-content input {
+            padding: 5px;
+            width: 100%;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .close-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: 35px;
+            right:15px;
+            z-index: 40;
+        }
+
+        /* Modal de Pesquisa */
+        #searchModal {
+            display: none;
+            position: fixed;
+            top: 0; /* Ancorado ao topo */
+            left: 70%;
+            width: 30%;
+            height: auto; /* Altura automática para o conteúdo */
+            background-color: #222;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            z-index: 30;
+        }
+         .modal-content {
+            position:relative;
+            padding: 0;
+            border-radius: 8px;
+            color: white;
+            max-width: 100%;
+            width: 100%;
+        }
+        .modal-content h2{
+            position:relative;
+            text-align:center;
+            background: #444;
+            height:55px;
+            width:100%;
+            line-height:50px;
+            border-radius:0 0 4px 4px;
+            top:0px;
+            left:0px;
+        }
+        #searchInput {
+            position:relative;
+            width: calc(80%-20px);
+            height:44px;
+            padding: 10px;
+            color: white;
+            border: 0;
+            top:0px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 900;
+            margin-right: 5px;
+            background: #444;
+            outline: none;
+        }
+        [type="search"]::-webkit-search-cancel-button {
+            -webkit-appearance:none;
+            width: 30px;
+            height: 30px;
+            border: 0;
+            cursor: pointer;
+            background-image: url('https://img.icons8.com/?size=100&id=43925&format=png&color=FFFFFF');
+            background-repeat: no-repeat;
+            background-size:32px;
+            opacity: 1;
+            transition: 0.2s;
+            margin-right: 0px;
+            color: red;
+        }
+        [type="color"]{
+            -webkit-appearance:none;
+            width: 30px;
+            height: 30px;
+            border: 0;
+            cursor: pointer;
+            background: #444;
+            transition: 0.2s;
+            border-radius:10px;
+        }
+        .result-item {
+            position:relative;
+            display: flex;
+            border-radius:4px;
+            background: #444;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            top:10px;
+        }
+        .result-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+         .tabs {
+            width: 100%;
+            display: inline-block;
+            justify-content: center;
+            margin-bottom: 20px;
+            white-space: nowrap;
+            overflow-y: hidden;
+        }
+        .tab {
+            padding: 10px 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-weight: 900;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 0px;
+            transition: background-color 0.3s;
+        }
+        .tab.active {
+            background-color: red;
+        }
+        .tab:hover {
+            background-color: #555;
+        }
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .movie-box {
+            position: relative;
+            display: inline-block;
+            background-color: #333;
+            border: 0px solid #ddd;
+            border-radius: 4px;
+            margin: 7px 7px;
+            padding: 10px;
+            left: 0;
+            top:-10px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .movie-box img {
+            width: 100%;
+            height: 200px;
+            border-radius: 4px;
+            float: left;
+            margin-right: 10px;
+        }
+        .movie-title {
+            color:white;
+            font-weight: bold;
+            margin-top: 0;
+            line-height: 30px;
+        }
+        footer {
+            height: 60px;
+            width: 100%;
+            background: #333;
+        }
+        .title-footer {
+            padding: 10px 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+        @media (max-width: 600px) {
+            .modal{
+                width:100%;
+                left:0;
+            }
+            #searchModal{
+                width:100%;
+                left:0;
+            }
+            .movie-box {
+                left: 0px;
+                width: calc(45% - 20px);
+            }
+        }
+        @media (min-width: 601px) and (max-width: 900px) {
+            .modal{
+                width:100%;
+                left:0;
+            }
+            #searchModal{
+            width:100%;
+            left:0;
+            }
+            .movie-box {
+                left: 0px;
+                width: calc(21.50% - 15px);
+            }
+        }
+        @media (min-width: 901px) {
+            .movie-box {
+                width: calc(20% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <button id="menuButton"><i class="fas fa-bars"></i></button>
+        <div class="logo">Acatemic</div>
+        <div class="icons">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+            <button id="customizeButton"><i class="fas fa-cog"></i></button>
+        </div>
+    </div>
+
+    <!-- Menu lateral -->
+    <ul class="menu" id="menu">
+        <li id="titlemenu"><button class="close-menu" id="closeMenuButton"><i class="fa fa-close"></i></button>
+        <h2>Menu</h2>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+
+    <!-- Modal de Personalização -->
+    <div class="modal" id="customizeModal">
+        <div class="modal-content">
+            <h2>Personalização</h2>
+            <button class="close-modal" id="closeModalButton"><i class="fa fa-close"></i></button>
+            <label for="menuColor">Cor do Menu:</label>
+            <input type="color" id="menuColor" value="#333">
+            <label for="bodyColor">Cor de Fundo:</label>
+            <input type="color" id="bodyColor" value="#101010">
+            <label for="layoutSelect">Layout:</label>
+            <select id="layoutSelect">
+                <option value="default">Padrão</option>
+                <option value="wide">Amplo</option>
+                <option value="compact">Compacto</option>
+            </select>
+            <label for="fontSelect">Fonte:</label>
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Modal de Pesquisa -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeSearchModalButton"><i class="fa fa-close"></i></button>
+            <h2>Pesquisa</h2>
+            <input type="search" id="searchInput" placeholder="Digite uma palavra-chave...">
+            <div id="resultsContainer" style="display: none;">
+                <div id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+ <div class="tabs">
+        <button class="tab active" data-category="Informacoes"><i class="fa fa-info"></i> Informaçãoes</button>
+        <button class="tab" data-category="Biblioteca"><i class="fa fa-book"></i> Biblioteca</button>
+        <button class="tab" data-category="Processos"><i class="fa fa-file"></i> Processos</button>
+        <button class="tab" data-category="Turmas"><i class="fa fa-person"></i> Turmas</button>
+        <button class="tab" data-category="Duvidas"><i class="fa fa-question"></i> Duvidas</button>
+    </div>
+
+    <div class="movie-container" id="movieContainer">
+        <!-- Movies will be dynamically generated here -->
+    </div>
+    
+    <footer>
+        <div class="title-footer">Footer Content</div>
+    </footer>
+    <script>
+        // Dados para os resultados da pesquisa
+        const items = [
+            { title: 'Home', link: '#home', image: 'https://via.placeholder.com/50', description: 'Página inicial' },
+            { title: 'Serviços', link: '#services', image: 'https://via.placeholder.com/50', description: 'Nossos serviços' },
+            { title: 'Sobre', link: '#about', image: 'https://via.placeholder.com/50', description: 'Informações sobre nós' },
+            { title: 'Contato', link: '#contact', image: 'https://via.placeholder.com/50', description: 'Entre em contato' },
+        ];
+
+        // Mostrar/esconder menu lateral
+        const menuButton = document.getElementById('menuButton');
+        const menu = document.getElementById('menu');
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+
+        // Fechar menu ao clicar em um link
+        menu.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                menu.classList.remove('show');
+            }
+        });
+
+        // Fechar o menu com o botão dentro do menu
+        const closeMenuButton = document.getElementById('closeMenuButton');
+        closeMenuButton.addEventListener('click', () => {
+            menu.classList.remove('show');
+        });
+
+        // Mostrar/esconder modal de personalização
+        const customizeButton = document.getElementById('customizeButton');
+        const customizeModal = document.getElementById('customizeModal');
+        const closeModalButton = document.getElementById('closeModalButton');
+        
+        customizeButton.addEventListener('click', () => {
+            customizeModal.style.display = 'flex';
+        });
+        closeModalButton.addEventListener('click', () => {
+            customizeModal.style.display = 'none';
+        });
+        window.addEventListener('click', (event) => {
+            if (event.target === customizeModal) {
+                customizeModal.style.display = 'none';
+            }
+        });
+
+        // Personalização dos estilos
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuColorInput = document.getElementById('menuColor');
+            menuColorInput.addEventListener('input', (event) => {
+                menu.style.backgroundColor = event.target.value;
+            });
+
+            const bodyColorInput = document.getElementById('bodyColor');
+            bodyColorInput.addEventListener('input', (event) => {
+                document.body.style.backgroundColor = event.target.value;
+            });
+
+            const layoutSelect = document.getElementById('layoutSelect');
+            layoutSelect.addEventListener('change', (event) => {
+                document.body.className = event.target.value;
+            });
+
+            const fontSelect = document.getElementById('fontSelect');
+            fontSelect.addEventListener('change', (event) => {
+                document.body.style.fontFamily = event.target.value;
+            });
+        });
+
+        // Mostrar/esconder modal de pesquisa
+        const searchButton = document.getElementById('searchButton');
+        const searchModal = document.getElementById('searchModal');
+        const closeSearchModalButton = document.getElementById('closeSearchModalButton');
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const resultsContainer = document.getElementById('resultsContainer');
+
+        searchButton.addEventListener('click', () => {
+            searchModal.style.display = 'flex';
+        });
+        closeSearchModalButton.addEventListener('click', () => {
+            searchModal.style.display = 'none';
+            searchResults.innerHTML = ''; // Limpar resultados ao fechar
+            resultsContainer.style.display = 'none'; // Esconder container de resultados
+        });
+        window.addEventListener('click', (event) => {
+            if (event.target === searchModal) {
+                searchModal.style.display = 'none';
+                searchResults.innerHTML = ''; // Limpar resultados ao fechar
+                resultsContainer.style.display = 'none'; // Esconder container de resultados
+            }
+        });
+
+        // Filtrar resultados ao digitar
+        searchInput.addEventListener('input', () => {
+            const keyword = searchInput.value.toLowerCase();
+            searchResults.innerHTML = ''; // Limpar resultados anteriores
+
+            if (keyword) {
+                const filteredItems = items.filter(item => item.title.toLowerCase().includes(keyword));
+
+                // Exibir resultados filtrados
+                if (filteredItems.length > 0) {
+                    filteredItems.forEach(item => {
+                        const div = document.createElement('a');
+                        div.classList.add('result-item');
+                        div.href = item.link; // Adicionando link
+                        div.innerHTML = `
+                            <img src="${item.image}" alt="${item.title}">
+                            <div class="result-details">
+                                <span class="result-title">${item.title}</span>
+                                <span>${item.description}</span>
+                            </div>
+                        `;
+                        searchResults.appendChild(div);
+                    });
+                    resultsContainer.style.display = 'block'; // Mostrar container de resultados
+                } else {
+                    searchResults.innerHTML = 'Nenhum resultado encontrado.';
+                    resultsContainer.style.display = 'block'; // Mostrar container de resultados
+                }
+            } else {
+                resultsContainer.style.display = 'none'; // Esconder resultados se não houver input
+            }
+        });
+
+        // Selecionar item ao clicar
+        resultsContainer.addEventListener('click', (event) => {
+            if (event.target.closest('.result-item')) {
+                searchModal.style.display = 'none'; // Esconder modal de pesquisa
+                resultsContainer.style.display = 'none'; // Esconder resultados
+                searchInput.value = ''; // Limpar campo de pesquisa
+                searchResults.innerHTML = ''; // Limpar resultados
+            }
+        });
+
+        // Esconder resultados ao clicar fora
+        document.addEventListener('click', (event) => {
+            if (!resultsContainer.contains(event.target) && event.target !== searchInput && event.target !== searchButton && !menu.contains(event.target)) {
+                resultsContainer.style.display = 'none'; // Esconder resultados
+            }
+        });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab');
+    const movieContainer = document.getElementById('movieContainer');
+
+    const movies = {
+        Informacoes: [
+            { title: "Dados Pessoais", image: "https://via.placeholder.com/200x150" },
+            { title: "Dados Bancarios", image: "https://via.placeholder.com/200x150" },
+            { title: "Calendario", image: "https://via.placeholder.com/200x150" 
+                },
+            { title: "Notas", image: "https://via.placeholder.com/200x150" 
+                },
+            { title: "Ministratores", image: "https://via.placeholder.com/200x150" },
+            { title: "Dissiplinas", image: "https://via.placeholder.com/200x150" },
+        ],
+        Biblioteca: [
+            { title: "Filme Drama 1", image: "https://via.placeholder.com/200x150" },
+            { title: "Filme Drama 2", image: "https://via.placeholder.com/200x150" },
+            { title: "Filme Drama 3", image: "https://via.placeholder.com/200x150" },
+        ],
+        Processos: [
+            { title: "Filme Comédia 1", image: "https://via.placeholder.com/200x150" },
+            { title: "Filme Comédia 2", image: "https://via.placeholder.com/200x150" },
+            { title: "Filme Comédia 3", image: "https://via.placeholder.com/200x150" },
+            {title: "Filme Comédia 4", image: "https://via.placeholder.com/200x150"},
+        ],
+        Turmas: [
+            { title: "Dissiplina 1", image: "https://via.placeholder.com/200x150" },
+            { title: "Dissiplina 2", image: "https://via.placeholder.com/200x150" },
+            { title: "Dissiplina 3", image: "https://via.placeholder.com/200x150" },
+            {title: "Dissiplina 4", image: "https://via.placeholder.com/200x150"
+                },
+            { title: "Dissiplina 5", image: "https://via.placeholder.com/200x150" },
+            {title: "Dissiplina 6", image: "https://via.placeholder.com/200x150"},
+        ],
+        Duvidas: [
+            { title: "Dissiplina 1", image: "https://via.placeholder.com/200x150" },
+            { title: "Dissiplina 2", image: "https://via.placeholder.com/200x150" },
+            { title: "Dissiplina 3", image: "https://via.placeholder.com/200x150" },
+            {title: "Dissiplina 4", image: "https://via.placeholder.com/200x150"
+                },
+            { title: "Dissiplina 5", image: "https://via.placeholder.com/200x150" },
+            {title: "Dissiplina 6", image: "https://via.placeholder.com/200x150"},
+        ],
+    };
+
+    function renderMovies(category) {
+        movieContainer.innerHTML = '';
+        movies[category].forEach(movie => {
+            const movieBox = document.createElement('div');
+            movieBox.className = 'movie-box';
+            movieBox.innerHTML = `
+                <img src="${movie.image}" alt="${movie.title}">
+                <div class="movie-title">${movie.title}</div>
+            `;
+            movieContainer.appendChild(movieBox);
+        });
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            renderMovies(tab.dataset.category);
+        });
+    });
+
+    // Renderizar a primeira categoria por padrão
+    renderMovies('Informacoes');
+});
+
+    </script>
+</body>
+</html>
