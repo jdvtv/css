@@ -1,0 +1,172 @@
+<div id="search-container">
+    <!-- O plugin será inicializado aqui -->
+</div>
+
+<style>
+.search-plugin-container {
+    font: 14px normal Arial, sans-serif;
+    color: #626771;
+    background-color: #fff;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: -5px;
+}
+
+.search-plugin-input {
+    text-align: left;
+    border: none;
+    padding: 12px 85px;
+    font-size: 19px;
+    box-shadow: 0 2px 4px #DDD;
+    width: 100%;
+    height: 63px;
+    outline: none;
+    display: block;
+    color: #000000;
+    margin: 0 auto 7px;
+    font-family: 'roboto', 'sans-serif';
+}
+
+.search-plugin-results {
+    width: 100%;
+}
+
+.search-plugin-item {
+    display: block;
+    padding: 5px 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 3px;
+    height: 120px;
+    border-radius: 7px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.search-plugin-item a {
+    height: 110px;
+    width: 100%;
+    left: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    position: absolute;
+    text-decoration: none;
+    display: block;
+}
+
+.search-plugin-item a h2 {
+    margin-top: -105px;
+    text-align: center;
+}
+
+.search-plugin-item a p {
+    margin-left: 100px;
+}
+
+.search-plugin-item a img {
+    height: 100%;
+    width: 90px;
+    object-fit: cover;
+}
+
+.search-plugin-item:hover {
+    background-color: #d8f2f1;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+(function($) {
+    $.fn.searchPlugin = function(options) {
+        // Configurações padrão
+        var settings = $.extend({
+            items: [],
+            placeholder: "Digite uma palavra",
+            noResultsText: "Nenhum resultado encontrado"
+        }, options);
+        
+        // Inicializa o plugin
+        return this.each(function() {
+            var container = $(this);
+            container.addClass('search-plugin-container');
+            
+            // Cria a estrutura HTML
+            var searchHtml = `
+                <input type="search" class="search-plugin-input" placeholder="${settings.placeholder}" />
+                <div class="search-plugin-results"></div>
+            `;
+            
+            container.html(searchHtml);
+            
+            var input = container.find('.search-plugin-input');
+            var resultsContainer = container.find('.search-plugin-results');
+            
+            // Função para renderizar os resultados
+            function renderResults(items) {
+                resultsContainer.empty();
+                
+                if (items.length === 0) {
+                    resultsContainer.html(`<div class="search-plugin-no-results">${settings.noResultsText}</div>`);
+                    return;
+                }
+                
+                items.forEach(function(item) {
+                    var itemHtml = `
+                        <div class="search-plugin-item">
+                            <a href="${item.url || '#'}">
+                                ${item.src ? `<img src="${item.src}" alt="${item.name}" />` : ''}
+                                <h2>${item.name}</h2>
+                                ${item.description ? `<p>${item.description}</p>` : ''}
+                            </a>
+                        </div>
+                    `;
+                    resultsContainer.append(itemHtml);
+                });
+            }
+            
+            // Evento de mudança no input
+            input.on('input', function() {
+                var searchString = $(this).val().trim().toLowerCase();
+                
+                if (searchString.length > 0) {
+                    var filteredItems = settings.items.filter(function(item) {
+                        return item.name.toLowerCase().includes(searchString);
+                    });
+                    renderResults(filteredItems);
+                } else {
+                    renderResults(settings.items);
+                }
+            });
+            
+            // Renderiza todos os itens inicialmente
+            renderResults(settings.items);
+        });
+    };
+})(jQuery);
+
+// Exemplo de uso
+$(document).ready(function() {
+    var libraries = [
+        {src:'https://d1di2lzuh97fh2.cloudfront.net/files/3w/3wg/3wgtbx.jpg?ph=762228e942', name: 'Backbone.js', description:'essa é a descricao de cada card', url: 'https://documentcloud.github.io/backbone/'},
+        {src:'https://762228e942.cbaul-cdnwnd.com/a39c552995a62183d70e3480929e57d4/200000010-8b6328b634/circulo-cruzado.svg?ph=762228e942', name: 'AngularJS', url: 'https://angularjs.org/'},
+        { name: 'jQuery', url: 'https://jquery.com/'},
+        { name: 'Prototype', url: 'https://www.prototypejs.org/'},
+        { name: 'React', url: 'https://facebook.github.io/react/'},
+        { name: 'Ember', url: 'https://emberjs.com/'},
+        { name: 'Knockout.js', url: 'https://knockoutjs.com/'},
+        { name: 'Dojo', url: 'https://dojotoolkit.org/'},
+        { name: 'Mootools', url: 'https://mootools.net/'},
+        { name: 'Underscore', url: 'https://documentcloud.github.io/underscore/'},
+        { name: 'Lodash', url: 'https://lodash.com/'},
+        { name: 'Moment', url: 'https://momentjs.com/'},
+        { name: 'Express', url: 'https://expressjs.com/'},
+        { name: 'Koa', url: 'https://koajs.com/'},
+    ];
+    
+    $('#search-container').searchPlugin({
+        items: libraries,
+        placeholder: "Pesquise por frameworks...",
+        noResultsText: "Nenhum framework encontrado"
+    });
+});
+</script>
